@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Blog
+  url: /blog
+- name: Now
+  url: /now
+- name: Projects
+  url: /projects
+- name: Rails Tips
+  url: /rails-tips

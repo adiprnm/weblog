@@ -1,0 +1,23 @@
+url: "https://adipurnm.my.id" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "adipurnm's web log" # the name of your site, e.g. ACME Corp.
+tagline: ""
+description: programming, tech, gaming, and daily life.
+author: Adi Purnama
+twitter:
+  card: summary
+  username: adi_prnm
+logo: /assets/images/adi-square.jpg
+social:
+  name: Adi Purnama
+  links:
+  - https://twitter.com/adi_prnm
+  - https://github.com/adiprnm
+  - https://linkedin.com/in/adi-prnm
+google_site_verification: google-site-verification=IiH3Ofey8Y2cbvKc6dp_yCPsEF9Hlk3zScc2LtxsHwk
+locale: en_US
+
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+
