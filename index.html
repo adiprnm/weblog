@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<p>Hi, my name is Adi. I am a full-stack Ruby on Rails programmer.</p>
+
+<p>Apart from being a programmer, I also love writing about everything, whether it’s food (i like foodies!), or my thoughts about something.</p>
+
+<p>I’d love to write technical stuff sometimes, either it’s a #TIL or share something that I already know.</p>
+
+<p>You can keep up-to-date with this blog via RSS feed. You can use your favorite RSS reader.</p>
+
+<p>Have interesting stuff to talk about, or want to get in touch? Reach me at <em>blog@adipurnm.my.id.</em></p>
+
+<h3>Recent posts</h3>
+
+<ul>
+  {% for post in site.posts | limit: 6 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
