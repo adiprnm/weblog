@@ -9,7 +9,7 @@ The dilemma came again. In the meantime, I was considering whether to publish my
 
 The biggest consideration is: how about my writings if I die? I want my writings to exist until the end of the internet. I don't want my blog or writings to be deleted without any clear reasons, just like [the blog I used to read](https://amahurek.blogspot.com/2019/07/blog-hurek-dihapus-apa-salahku.html). More than two thousand articles and hundreds of photos since 2005 were deleted by the service provider. That's a nightmare for a blogger!
 
-With those concerns, I think publishing my writings on GitHub is the best choice. I've never heard of a repository on GitHub being deleted for an unclear reason just like Google did. I've said [in this post](https://adipurnm.letsblogging.xyz/i-really-like-making-apps) that the cons of publishing my writings in GitHub is the impractical flow. Turns out I should accept that. There's no silver bullet, after all.
+With those concerns, I think publishing my writings on GitHub is the best choice. I've never heard of a repository on GitHub being deleted for an unclear reason just like Google did. I've said [in this post](/i-really-like-making-apps) that the cons of publishing my writings in GitHub is the impractical flow. Turns out I should accept that. There's no silver bullet, after all.
 
 If something happened to GitHub, for example, it doesn't support the GitHub pages anymore or the GitHub Pages become a paid service with an unreasonable price, or even worse, GitHub went into bankruptcy, then I still have my writing. I can move it to another provider that supports Jekyll.
 
