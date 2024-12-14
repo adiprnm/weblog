@@ -32,7 +32,7 @@
               <small class="text-gray">
                 {{ page.date | date: "%B %-d, %Y" }}
                 ·
-                {% assign reading_time = content | number_of_words | divided_by: 238 | ceil %}
+                {% assign reading_time = content | number_of_words | divided_by: 238.0 | ceil %}
                   {% if reading_time > 1 %}{{ reading_time }} minutes read{% else %}{{ reading_time }} minute read{% endif %}
               </small>
             </p>
