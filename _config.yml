@@ -17,7 +17,11 @@ social:
 google_site_verification: google-site-verification=IiH3Ofey8Y2cbvKc6dp_yCPsEF9Hlk3zScc2LtxsHwk
 locale: en_US
 permalink: /:title
-image: /assets/images/adi-og.jpg
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/adi-og.jpg
 
 plugins:
 - jekyll-feed
