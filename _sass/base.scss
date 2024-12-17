@@ -114,3 +114,15 @@ nav a:visited { color: blue; }
 .text-sm { font-size: 0.875rem; }
 .font-normal { font-weight: 400; }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121420;
+    color: #E4E6EB;
+  }
+
+  a { color: #B0B3BA; }
+  nav a, nav a:visited, article a:visited { color: #7A7E8A; }
+
+  footer.text-gray { color: #B0B3BA; }
+  footer a { color: #7A7E8A; }
+}
