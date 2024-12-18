@@ -3,6 +3,7 @@ layout: default
 title: On being a morning person
 permalink: /on-being-a-morning-person
 image: /assets/images/adi-og.jpg
+tags: self-development
 ---
 
 When I coded or played a game, I always did it overnight. The sensation they gave made me keep going on. Both of them somehow gave me something like a stimulant so I could do that in many hours.

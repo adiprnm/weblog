@@ -3,6 +3,7 @@ layout: default
 title: For I am basically a writer
 permalink: /for-i-am-basically-a-writer
 image: /assets/images/adi-og.jpg
+tags: side-hustle
 ---
 
 I started writing when I was in senior high school. I enjoyed reading stories in Kaskus back then, and plenty of stories were written at the Stories From the Heart subforum.

@@ -3,6 +3,7 @@ layout: default
 title: Time flies
 permalink: /time-flies
 image: /assets/images/adi-og.jpg
+tags: reflection
 ---
 
 Every time I look at the picture taken in the early 1900s, or listen to the music from the ’90s through early ’20s, and realize that I am now living in 2024, a profound feeling fills me up. It’s like “Wow, 20+ years has passed already? Unbelievable!”.

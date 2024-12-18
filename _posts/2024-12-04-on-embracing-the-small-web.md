@@ -3,6 +3,7 @@ layout: default
 title: On embracing the small web
 permalink: /on-embracing-the-small-web
 image: /assets/images/adi-og.jpg
+tags: tech
 ---
 
 TikTok revolutionizes the way content is delivered to users. They presented the For Your Page mechanism, where content is delivered according to user interests.

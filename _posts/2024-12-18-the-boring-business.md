@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The boring business
+tags: business side-hustle
 ---
 
 2010 up to 2020 is the golden age of the tech company. Jobs opportunity can be found everywhere. Companies competes each other to hire best talents. Investor invests to many start-ups. Working at start up company was the dream job. They paid the employees with good compensation.

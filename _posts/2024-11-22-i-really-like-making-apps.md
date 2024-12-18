@@ -3,6 +3,7 @@ layout: default
 title: I really like making apps
 permalink: /i-really-like-making-apps
 image: /assets/images/adi-og.jpg
+tags: side-hustle
 ---
 
 Last night, I discussed the dilemma of choosing a blogging platform (again) with my wife. I am happy with the current blog, but I think the publishing process is a bit complicated, especially when I want to add an image to the post. It is far easier when doing it from my laptop, but I enjoy writing more on my smartphone.

@@ -3,6 +3,7 @@ layout: default
 title: Google Maps's shortest path algorithm lacks weighting
 permalink: /google-maps-shortest-past-algorithm-lacks-weighting
 image: /assets/images/adi-og.jpg
+tags: tech
 ---
 
 On February, my wife and I went on vacation. It's about 3 hours away from my city. That was the first time we'd visited a place we'd never visited before with only three of us: me, my wife, and my son.

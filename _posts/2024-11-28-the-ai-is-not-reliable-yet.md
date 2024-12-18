@@ -3,6 +3,7 @@ layout: default
 title: The AI is not reliable yet
 permalink: /the-ai-is-not-reliable-yet
 image: /assets/images/adi-og.jpg
+tags: tech
 ---
 
 I encountered some technical challenge while deploying [Let's Blogging](https://letsblogging.xyz) to production. It was about was the subdomain wildcard implementation. I knew how to do it, but turned out it didn't work as I expected.

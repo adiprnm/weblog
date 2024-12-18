@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Rebuilding the reading habit
+tags: self-development
 ---
 
 I read random blogs recently. I discovered the blogs by searching for them using the *blogroll 2024* keyword on Google. Some of the blog posts contained links to another blog that the authors recommended to read. Jumping from one rabbit hole to another. The retro joy resurrected.

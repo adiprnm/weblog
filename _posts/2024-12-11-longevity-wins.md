@@ -3,6 +3,7 @@ layout: default
 title: Longevity wins
 permalink: /longevity-wins
 image: /assets/images/adi-og.jpg
+tags: side-hustle
 ---
 
 The dilemma came again. In the meantime, I was considering whether to publish my writing using Jekyll or [Let's Blogging](https://letsblogging.xyz). It's funny to have such consideration time really often, meanwhile, I can publish my writings everywhere, actually.
