@@ -26,4 +26,4 @@ defaults:
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
-- jekyll-tagging-related_posts
+- jekyll-sitemap
