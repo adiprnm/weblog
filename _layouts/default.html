@@ -13,7 +13,7 @@
       {% assign navlinks = site.data.navlinks | map: "url" %}
       <heading>
         <h1 class="mt-8">{{ site.title }}</h1>
-        <nav>
+        <nav class="leading-loose">
           {% for link in site.data.navlinks %}
             {% if link.url == page.url %}
               <strong>
