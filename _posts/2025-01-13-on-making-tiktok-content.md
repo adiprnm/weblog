@@ -3,7 +3,7 @@ layout: default
 title: On Making TikTok Content
 ---
 
-I published two videos on TikTok some days ago. The first video is about LocalWP. It is a free app by WPEngine that lets us run WordPress on localhost without hassle. The view was not that much. It has about 200 views.
+As the realization of [my resolutions in 2025](/my-2025-resolutions), I published two videos on TikTok some days ago. The first video is about LocalWP. It is a free app by WPEngine that lets us run WordPress on localhost without hassle. The view was not that much. It has about 200 views.
 
 The second one is about a coffee mug that I bought online. Yup, I made the video for TikTok affiliate purposes. I am interested in it since I think it is promising.
 
