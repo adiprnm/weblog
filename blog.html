@@ -11,12 +11,13 @@ description: List of blog posts, grouped by the published year.
     <details class="mt-4" {% if forloop.first %}open{% endif %}>
       <summary>{{ year.name }}</summary>
 
-      {% for post in year.items %}
-        <article class="mt-2">
-          <small class="text-gray">{{ post.date | date: "%B %-d, %Y" }}</small>
-          <a class="block mt-1" href="{{ post.url }}">{{ post.title }}</a>
-        </article>
-      {% endfor %}
+      <ul>
+        {% for post in year.items %}
+          <li>
+            {{ post.date | date: "%b %d, %Y" }} — <a class="mt-1" href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </details>
   {% endfor %}
 </div>
