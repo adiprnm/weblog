@@ -25,3 +25,9 @@ This one is a personal one. Much like a diary, lol. I write it in a simple txt f
 I once did this in circa 2014, but still inconsistent. Now after 10 years, I’m doing this again.
 
 Will I be more consistent? I don’t know, let’s just try it.
+
+### Restarted the morning run
+
+I used to do morning runs every weekend before I got married. To live a healthy life, I restarted to do morning runs again recently.
+
+<iframe height='454' style="width: 100%" frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/82044837/latest-rides/5f58577190061e1da91be2594977e2c29ff238bc'></iframe>
