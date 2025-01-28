@@ -20,7 +20,7 @@ blockquote {
   margin-left: 0;
 }
 
-p > code {
+p > code, li > code {
   font-family: Monospace;
   background-color: #dfdfdf;
   padding: 0.125rem 0.25rem;
