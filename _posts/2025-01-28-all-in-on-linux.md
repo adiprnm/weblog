@@ -1,6 +1,6 @@
 ---
 layout: default
-title: I removed the Windows partition and go all-in on Linux
+title: I deleted the Windows partition and go all-in on Linux
 ---
 
 This post is still about my developer laptop's story.
