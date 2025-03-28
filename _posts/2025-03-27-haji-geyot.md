@@ -9,7 +9,7 @@ Haji Geyot ini bukan orang, tapi patung yang mengenakan baju koko sambil bergera
 
 Guyat-geyot itu, gimana ya. Semacam gerakan ketika menari. Hanya saja, gerakan Haji Geyot itu ya gitu-gitu aja. Namanya juga patung, haha.
 
-![9dbac8c3-d7b0-4ce3-8ba1-16ca69bf6e3a](/assets/images/9dbac8c3-d7b0-4ce3-8ba1-16ca69bf6e3a.webp)
+![9dbac8c3-d7b0-4ce3-8ba1-16ca69bf6e3a](/assets/images/2025/9dbac8c3-d7b0-4ce3-8ba1-16ca69bf6e3a.webp)
 *Patung Haji Geyot*
 
 Haji Geyot ini biasa ditempatkan di atas panggung kecil di sebelah selatan alun-alun Ciamis, dan akan terus dipasang selama bulan Ramadhan.
