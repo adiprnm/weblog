@@ -2,22 +2,18 @@
 layout: default
 ---
 
-<img src="/assets/images/adi-small.webp" alt="" style="width: 128px; border-radius: 4px;">
+<h1>Selamat datang di blog saya 👋 </h1>
 
-<p>Hi, my name is Adi. I am a full-stack Ruby on Rails programmer.</p>
+<p>Nama saya Adi. Saya adalah seorang web programmer.</p>
 
-<p>Apart from being a programmer, I also love writing about everything, whether it’s food (i like foodies!), or my thoughts about something.</p>
+<p>Selain ngoding, saya juga suka menulis dan mempublikasikan tulisan saya di blog. Tulisan yang saya buat biasanya macam-macam. Kadang tech, kadang game, kadang juga bingung mau nulis apa, hehe.</p>
 
-<p>I’d love to write technical stuff sometimes, either it’s a #TIL or share something that I already know.</p>
+<p>Selamat membaca, dan semoga bermanfaat 🫡 </p>
 
-<p>You can keep up-to-date with this blog via RSS feed. You can use your favorite RSS reader.</p>
-
-<p>Have interesting stuff to talk about, or want to get in touch? Reach me at <em>blog@adipurnm.my.id.</em></p>
-
-<h3>Recent posts</h3>
+<h3>Tulisan terbaru</h3>
 
 <ul>
   {% for post in site.posts limit: 6 %}
-    <li>{{ post.date | date: "%b %d, %Y" }} — <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ post.date | date: "%b %d, %Y" }} – <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
