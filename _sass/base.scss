@@ -15,12 +15,9 @@ a { color: $primaryColor; }
 li a { text-decoration: none; }
 
 blockquote {
-  color: gray;
-  border-left: 2px solid lightgray;
+  color: #999999;
+  border-left: 4px solid #dfdfdf;
   padding-left: 1rem;
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-  font-style: italic;
   margin-left: 0;
 }
 
@@ -46,6 +43,7 @@ article p a {
 
 img {
   width: 100%;
+  border-radius: 4px;
 
   @media (min-width: 768px) {
     width: 80%;

@@ -3,6 +3,7 @@ layout: default
 title: Blog
 permalink: /blog
 description: List of blog posts, grouped by the published year.
+reply_to_email: none
 ---
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}

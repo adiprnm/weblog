@@ -1,6 +1,7 @@
 url: "https://adipurnm.my.id" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "adipurnm's log" # the name of your site, e.g. ACME Corp.
+email: "blog@adipurnm.my.id"
 tagline: ""
 description: kebun digital
 author: Adi Purnama

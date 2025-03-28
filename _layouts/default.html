@@ -32,6 +32,12 @@
         {% endunless %}
         {{ content }}
       </article>
+      {% assign reply_to_email = page.reply_to_email | default: true %}
+      {% if reply_to_email != "none" %}
+      <blockquote>
+        Balas melalui <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">email</a>.
+      </blockquote>
+      {% endif %}
       <footer class="text-gray mt-8 mb-16 text-center text-sm">
         <p>
           Ditulis oleh manusia. Tangkap <a class="underline" href="/feed.xml">feed RSS</a>.
