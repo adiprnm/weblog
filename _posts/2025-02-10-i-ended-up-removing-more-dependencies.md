@@ -15,7 +15,7 @@ These processes are still doable by myself. So, I removed the gem and rolled out
 
 ## Removed the `meta-tags` gem
 
-The `meta-tags` gems were used to set the meta tags. But since the meta tag was used only on the page that doesn't need authentication, adding a gem for it is unnecessary. Using the `content_for` tag and some view helpers, I could achieve the same result as the `meta-tags` gem. So, I removed it.
+The `meta-tags` gem was used to set the meta tags. But since the meta tag was used only on the page that doesn't need authentication, adding a gem for it is unnecessary. Using the `content_for` tag and some view helpers, I could achieve the same result as the `meta-tags` gem. So, I removed it.
 
 ## Removed the `heroicon` gem
 
