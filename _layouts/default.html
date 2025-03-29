@@ -6,6 +6,7 @@
     <link rel="icon" href="/assets/images/favicon.svg">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     {% seo %}
+    <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}"></script>
   </head>
   <body>
     <main class="container px-4">
