@@ -25,4 +25,7 @@ Tentunya sekarang sudah banyak deck baru dibanding dulu. Bahkan sekarang ada kon
 
 Awal saya tahu ini rasanya cukup aneh. Yah, wajar saja karena saya membandingkannya dengan gameplay 9 tahun lalu. Clash Royale terus berkembang seiring berjalannya waktu.
 
+***
+
+Catatan kaki:
 [^1]: Setelah 3 kali penggunaan kartu, di giliran keempat kartu akan memiliki kemampuan khusus, sehingg kartu jadi lebih kuat dari versi aslinya.
