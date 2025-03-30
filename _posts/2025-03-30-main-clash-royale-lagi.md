@@ -28,4 +28,5 @@ Awal saya tahu ini rasanya cukup aneh. Yah, wajar saja karena saya membandingkan
 ***
 
 Catatan kaki:
+
 [^1]: Setelah 3 kali penggunaan kartu, di giliran keempat kartu akan memiliki kemampuan khusus, sehingg kartu jadi lebih kuat dari versi aslinya.
