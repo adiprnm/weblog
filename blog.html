@@ -8,8 +8,9 @@ reply_to_email: none
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 <div class="mt-8">
+  <h1>Archives</h1>
   {% for year in posts_by_year %}
-    <details class="mt-4" {% if forloop.first %}open{% endif %}>
+    <details class="mt-2" {% if forloop.first %}open{% endif %}>
       <summary>{{ year.name }}</summary>
 
       <ul>
@@ -22,3 +23,24 @@ reply_to_email: none
     </details>
   {% endfor %}
 </div>
+
+{% assign tags = site.tags | sort %}
+{% if tags != empty %}
+  <div class="mt-8">
+    <h1>Tags</h1>
+
+    <div class="mt-4">
+      {% for tag in tags %}
+        <details class="mt-2">
+          <summary>#{{ tag[0] }} ({{ tag[1] | size }})</summary>
+
+          <ul>
+            {% for post in tag[1] %}
+            <li>{{ post.date | date: "%b %d, %Y" }} — <a href="{{ post.url }}">{{ post.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
