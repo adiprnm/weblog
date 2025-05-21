@@ -41,7 +41,7 @@ Copywriting di landing page sebenarnya udah pernah diperbaiki. Tapi somehow, say
 
 Seperti biasa, saya minta ChatGPT untuk dibuatkan copywriting supaya lebih magnetic alias menarik user untuk bikin undangan.
 
-Tapi ya mengandalkan 100% ke ChatGPT rasanya nggak betul. Karena copywriting ini sangat menyakut terhadap perasaan pembaca, jadi sebisa mungkin saya buat senatural mungkin tanpa mengurangi unique selling point dari Kanyaah: proses pembuatan yang instan dan fitur yang fleksibel.
+Tapi ya mengandalkan 100% ke ChatGPT rasanya nggak betul. Karena copywriting ini menyangkut perasaan pembaca, jadi saya buat senatural mungkin tanpa mengurangi unique selling point dari Kanyaah: proses pembuatan yang instan dan fitur yang fleksibel.
 
 Akhirnya saya coba breakdown masalah umum yang cukup sering dihadapi calon mempelai:
 1. Proses bikin undangan yang cukup lama, bisa berjam-jam bahkan berhari-hari.
@@ -80,9 +80,9 @@ Makanya, kemarin-kemarin saya fokus untuk improve dari sisi user experience dan 
 ✅ Animasi-animasi nggak penting saya hapus<br>
 ✅ Font family saya ganti dari Ubuntu ke Plus Jakarta Sans supaya tifografi-nya lebih menarik dan mudah dibaca.
 
-Dari sisi performance, saya mengimplementasikan sebanyak mungkin saran yang bisa saya implementasikan, seperti penambahan atribut `alt` di setiap gambar yang ada, menambahkan meta description, dan sebagainya.
+Dari sisi performance, saya mengimplementasikan sebanyak mungkin saran yang bisa saya implementasikan dari Lighthouse, seperti penambahan atribut `alt` di setiap gambar yang ada, menambahkan meta description, dan sebagainya.
 
-Hasilnya? Skor Accessibility, Best Practice, dan SEO udah hijau semua di web dan mobile. Yang bermasah cuma satu: skor Performance.
+Hasilnya? Skor Accessibility, Best Practice, dan SEO udah hijau semua di web dan mobile. Yang bermasah tinggal satu: skor Performance.
 
 ## Bertanya di Threads
 
@@ -144,5 +144,9 @@ Ketika klik Atur Foto, maka akan diarahkan ke halaman khusus untuk atur foto:
 Sebagaimana asumsi saya di nomor 2, untuk beberapa waktu ke depan, saya akan fokus memperbanyak pilihan template yang bisa digunakan. Ada satu referensi desain yang cukup menarik dan ingin saya buatkan template serupa.
 
 Progressnya akan saya usahakan update [di akun Threads saya](https://www.threads.com/@by.adipurnm){:target="_blank"} dan di blog ini.
+
+Oh, sebelum bikin template baru, saya akan coba enhance dulu halaman Bagikan Undangan. Saat ini masih belum user-friendly. Terlalu banyak opsi aksi dalam satu halaman.
+
+Setelah undangan dibayar dan setelah login juga harusnya user diarahkan ke Bagikan Undangan aja. Biar user lebih sadar bahwa fitur ini memang ada.
 
 Semoga lancar dan nggak mangkrak lagi 💪
