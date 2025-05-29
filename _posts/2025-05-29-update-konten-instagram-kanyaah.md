@@ -23,3 +23,5 @@ Per hari ini sudah semua template saya tambahkan di Reels dan di Story. Saya tam
 Setelah konten konten esensial selesai diupload rencananya saya akan menambahkan satu-dua template baru sebelum benar-benar fokus ke marketing. Saya juga sepertinya akan buat akun Kanyaah di TikTok untuk promosi.
 
 Bismillah, semoga konsisten 💪
+
+![Instagram Kanyaah](../assets/images/2025/Screenshot_20250529_115559_Instagram.webp)
