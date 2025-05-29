@@ -11,7 +11,7 @@ reply_to_email: none
   <h1>Archives</h1>
   {% for year in posts_by_year %}
     <details class="mt-2" {% if forloop.first %}open{% endif %}>
-      <summary>{{ year.name }}</summary>
+      <summary>{{ year.name }} ({{ year.items | size }})</summary>
 
       <ul>
         {% for post in year.items %}
