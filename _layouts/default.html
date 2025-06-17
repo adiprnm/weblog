@@ -15,10 +15,14 @@
       {% assign links = "/, /blog" | split: ", " %}
       {% assign navlinks = site.data.navlinks | map: "url" %}
       <heading>
-        <h1>{{ site.title }}</h1>
+        <h2>{{ site.title }}</h2>
         <nav class="leading-loose">
           {% for link in site.data.navlinks %}
-            <a class="mr-2" href="{{ link.url }}">{{ link.name }}</a>
+            {% if link.text != "" %}
+              <a href="{{ link.url }}">{{ link.name }}</a><sup class="mr-2 text-red"> <small>{{ link.text }}</small></sup>
+            {% else %}
+              <a class="mr-2" href="{{ link.url }}">{{ link.name }}</a>
+            {% endif %}
           {% endfor %}
         </nav>
       </heading>
