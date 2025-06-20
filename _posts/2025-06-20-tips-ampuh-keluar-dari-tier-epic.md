@@ -8,9 +8,9 @@ Beberapa hari yang lalu Mobile Legends reset season.
 
 Season kemarin saya nyampe bintang 50 aja. Cuma ngepush di awal sama pertengahan season. Itu juga menang-kalah-menang-kalah terus. Bahkan pernah sampai kalah 9 kali berturut-turut. Kacau.
 
-Yang paling nyebelin adalah ketemu warlok: warga lokal. Penduduk asli tier epic. Di mana gameplay nya, waduh, bikin pusing sendiri kalau diliatin.
+Yang paling nyebelin main setelah reset season adalah ketemu warlok: warga lokal. Penduduk asli tier epic. Di mana gameplay nya, waduh, bikin pusing sendiri kalau diliatin.
 
-Main di tier ini serba salah. Main exp lane, jungler sama exp kebantai-bantai. Main jungler, roamer gangerti rotasi, buka map, dan cara open war.
+Main di tier ini serba salah. Main exp lane, jungler sama gold kebantai-bantai. Main jungler, roamer gangerti rotasi, buka map, dan cara open war.
 
 Tapi, kemarin-kemarin saya baru sadar. Kalau kalian main solo atau duo, ada cara untuk mengatasi sistem gelap ini. Cara ini sedikit kurang populer, terutama poin satu dan dia, tapi udah terbukti cukup ampuh dan efektif. Apa itu?
 
@@ -49,7 +49,7 @@ Ini kondisi tim nggak kalah-kalah amat, tapi anomalinya, marksman nya mati 9. Di
 
 Lagi-lagi gendong warlok. Sekarang anomalinya bahkan 3: Hayabusa, Cecilion, dan Argus. Dapet MVP lagi. Gatau deh kalau picknya roamer tank atau healer, kemungkinan besar pasti kalah.
 
-Tips ini cukup ampuh buat tier epic dan legend. Karena...
+Tips-tips di atas cukup ampuh buat tier epic dan legend. Karena...
 
 ## Player-player di tier ini kagetan dan buta map
 
