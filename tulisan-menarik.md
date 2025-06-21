@@ -5,7 +5,7 @@ permalink: /tulisan-menarik
 description: Kumpulan tulisan yang menarik untuk dibaca.
 ---
 
-*diperbarui pada tanggal 13 April 2025.*
+> *terakhir diperbarui tanggal 13 April 2025.*
 
 ### Work
 
