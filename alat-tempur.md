@@ -50,3 +50,9 @@ Goto Madelin Air Cooler Mini
 
 **Kursi Kerja**<br>
 Owen
+
+**Masih masuk wishlist**<br>
+- External monitor
+- Microphone
+
+![2a985c40-4f68-47b4-96fe-69ba6acdf116](/assets/images/2025/2a985c40-4f68-47b4-96fe-69ba6acdf116.jpg)
