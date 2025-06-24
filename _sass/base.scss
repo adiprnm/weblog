@@ -4,10 +4,10 @@ $primaryColor: #0066cc;
 
 @font-face {
   font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-Regular.ttf') format('ttf'),
-       url('/assets/fonts/PTSerif-Bold.ttf') format('ttf'),
-       url('/assets/fonts/PTSerif-Italic.ttf') format('ttf'),
-       url('/assets/fonts/PTSerif-BoldItalic.ttf') format('ttf');
+  src: url('/assets/fonts/PTSerif-Regular.ttf'),
+       url('/assets/fonts/PTSerif-Bold.ttf'),
+       url('/assets/fonts/PTSerif-Italic.ttf'),
+       url('/assets/fonts/PTSerif-BoldItalic.ttf');
   font-display: swap;
 }
 
