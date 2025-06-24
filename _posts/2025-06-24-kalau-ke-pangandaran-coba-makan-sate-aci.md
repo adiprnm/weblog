@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kalau liburan ke Pangandaran, cobain deh makanan ini
+title: Kalau liburan ke Pangandaran, cobain deh makanan yang satu ini
 tags: Kuliner
 ---
 
