@@ -50,6 +50,13 @@
       </blockquote>
       {% endif %}
       <footer class="text-gray mt-8 mb-16 text-center text-sm">
+        {% assign latest_status = site.data.statuses | first %}
+        {% if latest_status %}
+        <div class="mb-4 status">
+          <strong>Update Kehidupan</strong>
+          <p class="mt-2 mb-0"><strong>{{ latest_status.date | date: "%b %-d, %Y" }}</strong>: {{ latest_status.status }}</p>
+        </div>
+        {% endif %}
         <p>
           Ditulis oleh manusia. Tangkap <a class="underline" href="/feed.xml">feed RSS</a>.
         </p>
