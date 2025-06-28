@@ -3,7 +3,7 @@ layout: default
 title: Playing game should be fun
 permalink: /playing-game-should-be-fun
 image: /assets/images/adi-og.jpg
-tags: gaming
+tags: Gaming
 ---
 
 Some time ago, I played a MOBA game on my phone to relieve my stress after work. I played classic mode, with the hope that I could play a fun game.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Garap lagi Kanyaah
-tags: tech programming side-hustle
+tags: Tech Programming SideHustle
 ---
 
 Mari kita recap dulu pencapaian beberapa aplikasi yang udah saya buat.

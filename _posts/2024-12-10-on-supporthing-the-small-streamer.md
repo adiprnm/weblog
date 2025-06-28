@@ -3,7 +3,7 @@ layout: default
 title: On supporting the small streamer
 permalink: /on-supporting-the-small-streamer
 image: /assets/images/adi-og.jpg
-tags: gaming
+tags: Gaming
 ---
 
 The last time I played the MOBA game, I teamed up with a player who played only one hero. The player turned out to be a streamer. Once we played the game, he also promoted his YouTube channel to other players.

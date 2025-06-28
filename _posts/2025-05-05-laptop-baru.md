@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Laptop baru
-tags: tech
+tags: Tech
 ---
 
 Cerita ini sempat saya share di Threads, tapi kali ini saya coba cerita versi lengkapnya.

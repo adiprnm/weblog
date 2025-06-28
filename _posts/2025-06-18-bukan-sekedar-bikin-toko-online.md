@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Ini bukan sekedar bikin toko online semata
-tags: personalbranding
+tags: PersonalBranding
 ---
 
 Beberapa hari belakang ini, seperti biasa, di sela-sela kesibukan kerja full time, saya menyempatkan diri untuk bikin project kecil-kecilan.

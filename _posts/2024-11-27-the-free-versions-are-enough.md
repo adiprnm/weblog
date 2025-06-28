@@ -3,7 +3,7 @@ layout: default
 title: The free versions are enough
 permalink: /the-free-versions-are-enough
 image: /assets/images/adi-og.jpg
-tags: tech
+tags: Tech
 ---
 
 I have asked Claude and ChatGPT more often recently. They helped me a lot to do my job.

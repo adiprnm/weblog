@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kenalan dulu sama solid trifecta
-tags: tech programming RubyOnRails
+tags: Tech Programming RubyOnRails
 ---
 
 Ada satu premis yang menarik perhatian saya menjelang rilisnya Rails 8, yaitu: bagaimana jika database, yang selama ini digunakan untuk menyimpan data, justru digunakan sebagai backend untuk caching, queueing, dan websocket?

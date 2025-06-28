@@ -3,7 +3,7 @@ layout: default
 title: The finished software
 permalink: /the-finished-software
 image: /assets/images/adi-og.jpg
-tags: tech side-hustle
+tags: Tech SideHustle
 ---
 
 Gawéeun recently has no feature enhancements nor bug fixes. And it should be like this. I designed it to be simple and. useful.

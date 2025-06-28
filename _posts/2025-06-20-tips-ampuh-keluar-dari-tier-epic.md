@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tips ampuh keluar dari tier epic
-tags: gaming
+tags: Gaming
 ---
 
 Beberapa hari yang lalu Mobile Legends reset season.
