@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Seblak yang satu ini agak lain dari seblak yang biasanya
-tags: Kuliner
+tags: Kuliner Pangandaran
 ---
 
 Ada satu seblak yang cukup unik di Pangandaran, yaitu seblak katel Teh Nonong.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kalau liburan ke Pangandaran, cobain deh makanan yang satu ini
-tags: Kuliner
+tags: Kuliner Pangandaran
 ---
 
 Kalau kalian lagi liburan ke Pangandaran, kalian wajib cobain makan sate aci.
