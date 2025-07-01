@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pelajaran yang saya dapat dari beriklan di Meta Ads
-tags: side-hustle marketing
+tags: SideHustle Marketing
 ---
 
 Beberapa waktu lalu, saya coba fitur boost story di Instagram Kanyaah. Harapannya tentu aja: bisa menarik lebih banyak calon customer supaya bikin undangan.
@@ -33,7 +33,7 @@ Hasilnya, kurang lebih sebagai berikut:
   - **Jawa Timur:** 20%
   - **Yogyakarta:** 12%
   - **Jawa Tengah:** 1%
-  
+
 Sejujurnya, saya sedikit nggak puas dengan hasilnya. Dari 15102 tayangan, hanya 74 orang yang mengunjungi situs web, dan nggak ada yang bikin undangan sama sekali.
 
 Tapi, dari sini saya dapet beberapa pelajaran yang bisa diimplementasikan di iklan selanjutnya.

@@ -3,7 +3,7 @@ layout: default
 title: Cloudflare free plan is way too good
 permalink: /cloudflare-free-plan-is-way-too-good
 image: /assets/images/adi-og.jpg
-tags: tech
+tags: Tech
 ---
 
 I encountered a latency issue after deploying [Let's Blogging](https://letsblogging.xyz). Accessing the subdomain is quick, but accessing the homepage could take 1 minute! Super weird. I didn't have any idea why this happened. I suspected that it was probably caused by the wild card certificate, but later I thought that didn't make any sense.

@@ -3,7 +3,7 @@ layout: default
 title: We ought to have a go-to framework
 permalink: /we-ought-to-have-a-go-to-framework
 image: /assets/images/adi-og.jpg
-tags: tech
+tags: Tech
 ---
 
 What amaze me from the web development is that you can build anything you like by using any web tech stack. The web does not belong to a specific programming language or tech stack. You can build cool apps by using Rails, Laravel, Django, NextJS, or whatever - even your own personal framework and tooling.

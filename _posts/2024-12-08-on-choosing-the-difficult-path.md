@@ -3,7 +3,7 @@ layout: default
 title: On choosing the difficult path
 permalink: /on-choosing-the-difficult-path
 image: /assets/images/adi-og.jpg
-tags: self-development
+tags: SelfDevelopment
 ---
 
 There's a saying that says:

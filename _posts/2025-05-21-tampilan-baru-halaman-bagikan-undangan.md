@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tampilan baru halaman Bagikan Undangan
-tags: tech programming side-hustle
+tags: Tech Programming SideHustle
 ---
 
 Di [tulisan saya sebelumnya](/garap-lagi-kanyaah), saya bilang akan revamp halaman Bagikan Undangan. Jadi, tulisan ini adalah tulisan untuk update progress revamp halaman.

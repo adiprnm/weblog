@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Website berita Indonesia terlalu banyak iklan
-tags: opini
+tags: Opini
 ---
 
 Saya cukup heran dengan mayoritas situs berita Indonesia saat ini. Situs-situs berita tersebut seolah kehilangan tujuan utamanya: menyajikan berita kepada pembaca.

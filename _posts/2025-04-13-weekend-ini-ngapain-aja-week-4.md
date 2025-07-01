@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "[W4]: #WeekendIniNgapainAja"
-tags: tech programming WeekendIniNgapainAja
+tags: Tech Programming WeekendIniNgapainAja
 ---
 
 Selamat datang di tulisan **#WeekendIniNgapainAja** 🎉

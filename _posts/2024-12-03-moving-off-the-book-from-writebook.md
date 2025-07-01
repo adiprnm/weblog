@@ -3,7 +3,7 @@ layout: default
 title: Moving off the book from Writebook
 permalink: /moving-off-the-book-from-writebook
 image: /assets/images/adi-og.jpg
-tags: tech side-hustle
+tags: Tech SideHustle
 ---
 
 I wrote a practical deployment guide using Dokku and published it using [Writebook](https://once.com/writebook).

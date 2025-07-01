@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Jaringan telepon (masih) akan tetap ada
-tags: opini
+tags: Opini
 ---
 
 Tulisan berjudul [dumbphones as a new status symbol](https://blog.avas.space/dumbphone/) ini mengingatkan saya pada masa-masa sekolah. Saya lupa tepatnya kapan, tapi kalau saya tidak ingat, sepertinya ketika mengikuti salah satu mata kuliah.

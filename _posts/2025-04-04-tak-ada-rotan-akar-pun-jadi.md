@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tak ada rotan, akar pun jadi
-tags: rumahtangga kejadiantakterduga
+tags: RumahTangga KejadianTakTerduga
 ---
 
 Satu lagi hal tak terduga terjadi kemarin.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Being a parent is an everlasting learning
-tags: parenting
+tags: Parenting
 ---
 
 I visit my parents this weekend. It's been a long time: probably about three months since my last visit.

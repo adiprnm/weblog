@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Game apa sih ini
-tags: tech
+tags: Gaming
 ---
 
 ![Lose streak 1](/assets/images/2025/2208ec9f-7620-47c5-88d7-9fd2737027c2.webp)

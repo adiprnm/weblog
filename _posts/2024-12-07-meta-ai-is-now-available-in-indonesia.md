@@ -3,7 +3,7 @@ layout: default
 title: Meta AI is now available in Indonesia
 permalink: /meta-ai-is-now-available-in-indonesia
 image: /assets/images/adi-og.jpg
-tags: tech
+tags: Tech
 ---
 
 I am shocked. Really. I know that Meta integrates the AI within WhatsApp. I've seen the demo on Twitter, but I didn't know that today is the launch day in Indonesia.

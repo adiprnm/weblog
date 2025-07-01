@@ -3,7 +3,7 @@ layout: default
 title: On writing a book
 permalink: /on-writing-a-book
 image: /assets/images/adi-og.jpg
-tags: self-development side-hustle
+tags: SelfDevelopment SideHustle
 ---
 
 I was recently thinking about writing a programming book. Well, I already made it. It's about deployment using Dokku. I put the link on the [Projects](/projects) page of this blog. Check it out, it's free.
