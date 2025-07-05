@@ -4,7 +4,7 @@ title: Omarchy? Belum dulu deh
 tags: Tech Opini
 ---
 
-Kemarin-kemarin habis baca tulisan di blog-nya mas Arik. Judulnya: [Gaya Nulis Blog yang Bikin Orang Mau Balik Lagi](https://idearik.com/gaya-nulis-blog/).
+Kemarin-kemarin habis baca tulisan di blog-nya mas Arik. Judulnya: [Blog Writing Style That Makes People Want to Come Back](https://idearik.com/blog-writing-style/).
 
 Tulisannya menarik. Jadi, di tulisan ini, saya mau coba.
 
