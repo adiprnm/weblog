@@ -18,12 +18,13 @@ Karena pada dasarnya, Omarchy itu hanya custom desktop environment. Nggak kurang
 
 ## Tiling di Hyprland memang terlihat keren. Tapi, tiling di Ubuntu MATE juga udah cukup.
 
-Mau tamplian setengah kiri setengah kanan? Bisa.
-Mau tampilan setengah atas setengah bawah? Bisa.
-Mau tampilan grid 2x2? Kayaknya bisa. Pun kalau nggak bisa, jarang saya pakai juga.
+Mau tamplian setengah kiri setengah kanan? Bisa.<br>
+Mau tampilan setengah atas setengah bawah? Bisa.<br>
+Mau tampilan grid 2x2? Kayaknya bisa. Pun kalau nggak bisa, jarang saya pakai juga.<br>
 Search aplikasi? Masih bisa juga.
 
-Yang bikin estetik di Omarchy adalah tampilan dan animasi transisinya. Tapi, lama pakai Ubuntu MATE membuat saya jadi terbiasa pakai OS tanpa animasi transisi. Rasanya lebih snappy.
+Yang bikin estetik di Omarchy adalah tampilan dan animasi transisinya.<br>
+Tapi, lama pakai Ubuntu MATE membuat saya jadi terbiasa pakai OS tanpa animasi transisi. Rasanya lebih snappy.
 
 Install ulang ke Arch juga persiapannya lumayan. Sebelum install ulang harus backup file-file penting dulu.
 
@@ -33,7 +34,7 @@ Rasanya kurang worth aja dengan benefit yang akan didapatkan. Malah benefit nya 
 
 Selain itu, saya udah nyaman dengan setup sekarang. Terutama setup NeoVim + Tmux. Kerjaan satset beres.
 
-Kalau pindah ke Omarchy, harus menyesuaikan lagi dengan keybinding-nya. Butuh waktu lagi. Sementars itu, ada kerjaan yang harus segera diselesaikan.
+Kalau pindah ke Omarchy, harus menyesuaikan lagi dengan keybinding-nya. Butuh waktu lagi. Sementara ada kerjaan yang harus segera diselesaikan.
 
 Mungkin nanti, tapi entah kapan. Kalau saya ada device nganggur, saya bakalan coba install Omarchy.
 
