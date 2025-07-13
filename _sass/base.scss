@@ -4,12 +4,32 @@ $primaryColor: #0066cc;
 
 @font-face {
   font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-Regular.ttf'),
-       url('/assets/fonts/PTSerif-Bold.ttf'),
-       url('/assets/fonts/PTSerif-Italic.ttf'),
-       url('/assets/fonts/PTSerif-BoldItalic.ttf');
+  src: url('/assets/fonts/PTSerif-Regular.ttf') format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "PT Serif";
+  src: url('/assets/fonts/PTSerif-Bold.ttf') format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url('/assets/fonts/PTSerif-Italic.ttf') format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url('/assets/fonts/PTSerif-BoldItalic.ttf');
+  font-display: swap;
+  font-weight: 600;
+  font-style: italic;
+}
+
 
 * { box-sizing: border-box; }
 
