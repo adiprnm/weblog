@@ -325,3 +325,5 @@ input[type=submit] {
   color: white!important;
 }
 .w-full { width: 100%; }
+.empty-state { display: none; }
+.empty-state:has(+ script) { display: block; }
