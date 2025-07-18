@@ -312,3 +312,16 @@ input[type=submit] {
     color: #B0B3BA;
   }
 }
+
+.btn {
+  text-align: center;
+  padding: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background-color: $primaryColor;
+  color: white!important;
+}
+.w-full { width: 100%; }
