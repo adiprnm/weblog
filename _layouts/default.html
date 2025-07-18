@@ -19,7 +19,10 @@
       {% assign links = "/, /blog" | split: ", " %}
       {% assign navlinks = site.data.navlinks | map: "url" %}
       <heading>
-        <h2>{{ site.title }}</h2>
+        <a href="{{ site.url }}" class="flex items-center mt-6 mb-4 site-title-anchor">
+          <img src="/assets/images/adi-small.webp" alt="adipurnm" class="profile-photo">
+          <p class="site-title">{{ site.title }}</p>
+        </a>
         <nav class="leading-loose">
           {% for link in site.data.navlinks %}
             {% if link.text != "" %}
