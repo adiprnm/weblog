@@ -1,0 +1,23 @@
+---
+layout: default
+title: Newsletter
+permalink: /newsletter
+reply_to_email: none
+---
+
+<p>Gabung bersama pembaca lainnya untuk mendapatkan tulisan-tulisan saya via e-mail.</p>
+
+<div class="mt-8 mb-8">
+  <script async src="https://eocampaign1.com/form/058ec016-6381-11f0-a744-4559c56242fd.js" data-form="058ec016-6381-11f0-a744-4559c56242fd"></script>
+</div>
+
+<p><strong>Tulisan sebelumnya</strong></p>
+
+{% assign newsletters = site.posts | where_exp:"post", "post.tags contains 'Newsletter'" %}
+<ul>
+  {% for newsletter in newsletters %}
+    <li>
+      {{ newsletter.date | date: "%b %d, %Y" }} – <a class="mt-1" href="{{ newsletter.url }}">{{ newsletter.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
