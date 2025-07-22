@@ -36,13 +36,11 @@
       <article class="mt-8">
         {% unless links contains page.url %}
           {% unless navlinks contains page.url %}
-            <p class="mb-2">
-              <small class="text-gray">
-                {{ page.date | date: "%b %-d, %Y" }}
-              </small>
-            </p>
+            <small class="text-gray">
+              {{ page.date | date: "%b %-d, %Y" }}
+            </small>
           {% endunless%}
-          <h1 class="mt-2">{{ page.title }}</h1>
+          <h1 class="mt-0">{{ page.title }}</h1>
         {% endunless %}
         {{ content }}
       </article>
