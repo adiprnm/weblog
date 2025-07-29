@@ -63,4 +63,14 @@ Identifikasi dulu masalahnya di mana. Selama masih bisa ditingkatkan, tingkatkan
 
 ***
 
-Oiya, buat temen-temen yang masih awam dengan proses deployment aplikasi ke server, saya nulis e-book Self-hosting dengan Dokku. [Unduh di sini, gratis!](https://shop.adipurnm.my.id/products/self-hosting-dengan-dokku/)
+Buat temen-temen yang mau deploy aplikasi ke server, tapi belum ada pengalaman setup server sama sekali, saya nulis e-book tentang bagaimana cara deploy aplikasi ke server pakai Dokku. Gratis!
+
+![Self-hosting dengan dokku](/assets/images/2025/self-hosting-dengan-dokku.webp)
+<a target="_blank" href="https://shop.adipurnm.my.id/products/self-hosting-dengan-dokku" class="btn btn--primary mt-4 w-full">Unduh di sini</a>
+
+Saya juga lagi nulis e-book The Programmer's Mindset, berisi mindset-mindset apa yang perlu dimiliki oleh kita sebagai seorang programmer agar tetap relevan di tengah ketatnya persaingan kerja.
+
+Cocok buat para programmer yang baru mulai merintis karir di dunia programming, atau buat temen-temen yang mulai tertarik mendalami dunia programming.
+
+![The Programmer's Mindset](/assets/images/2025/the-programmers-mindset.webp)
+<a target="_blank" href="https://shop.adipurnm.my.id/products/the-programmers-mindset" class="btn btn--primary mt-4 mb-8 w-full">Unduh di sini</a>
