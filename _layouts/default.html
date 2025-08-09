@@ -3,15 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="icon" href="/assets/images/favicon.svg">
-    <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
-    <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
-    <link rel="preload" href="/assets/fonts/PTSerif-Italic.ttf">
-    <link rel="preload" href="/assets/fonts/PTSerif-BoldItalic.ttf">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     {% seo %}
+    <link rel="icon" href="/assets/images/favicon.svg">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/PTSerif-Italic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/PTSerif-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
     {% if jekyll.environment == "production" %}
-      <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}"></script>
+      <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
     {% endif %}
   </head>
   <body>
