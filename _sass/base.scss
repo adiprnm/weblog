@@ -4,28 +4,28 @@ $primaryColor: #0172ad;
 $primaryColorDark: #7A7E8A;
 
 @font-face {
-  font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-Regular.ttf') format("truetype");
+  font-family: "Figtree";
+  src: url('/assets/fonts/Figtree-Regular.ttf') format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-Bold.ttf') format("truetype");
+  font-family: "Figtree";
+  src: url('/assets/fonts/Figtree-Bold.ttf') format("truetype");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-Italic.ttf') format("truetype");
+  font-family: "Figtree";
+  src: url('/assets/fonts/Figtree-Italic.ttf') format("truetype");
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url('/assets/fonts/PTSerif-BoldItalic.ttf');
+  font-family: "Figtree";
+  src: url('/assets/fonts/Figtree-BoldItalic.ttf');
   font-display: swap;
   font-weight: 600;
   font-style: italic;
@@ -35,7 +35,7 @@ $primaryColorDark: #7A7E8A;
 * { box-sizing: border-box; }
 
 body {
-  font-family: "PT Serif";
+  font-family: "Figtree";
   margin: 0;
   padding: 0;
 }
