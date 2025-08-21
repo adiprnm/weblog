@@ -44,3 +44,7 @@ Stay safe!
 
 Salam,<br>
 adipurnm.
+
+***
+
+Mau dapat tulisan-tulisan seperti ini langsung di e-mail kamu? Yuk [gabung newsletter](/newsletter) sekarang juga! Gratis!
