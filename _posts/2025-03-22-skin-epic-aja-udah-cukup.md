@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Skin epic aja udah cukup
+tags: Gaming
 ---
 
 Sebagai konteks, di Mobile Legends ada beberapa jenis skin:

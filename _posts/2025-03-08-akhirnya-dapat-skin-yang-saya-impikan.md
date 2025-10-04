@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Akhirnya dapat skin yang saya impikan
+tags: Gaming
 ---
 
 Ada satu skin di Mobile Legends yang dari dulu saya kepingin banget buat milikin, yaitu skin KOF Chou.
