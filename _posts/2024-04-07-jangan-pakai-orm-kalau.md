@@ -3,6 +3,7 @@ layout: default
 title: Jangan Pakai ORM, Kalau...
 permalink: /jangan-pakai-orm-kalau-begini
 image: /assets/images/adi-og.jpg
+tags: Tech
 ---
 
 Beberapa waktu lalu, di X ada perdebatan menggunai apakah penggunaan Object Relational Mapper (ORM) itu diperlukan atau tidak.

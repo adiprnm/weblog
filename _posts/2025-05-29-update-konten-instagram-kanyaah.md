@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Update konten Instagram Kanyaah
-tags: Tech Programming SideHustle
+tags: SideHustle
 ---
 
 Beberapa hari belakangan ini, saya cukup intens update konten di akun Instagram Kanyaah [@kanyaahweb_](https://instagram.com/kanyaahweb_).

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Teknologia
+permalink: /teknologia
+reply_to_email: none
+---
+
+<ul>
+  {% for post in site.posts %}
+    {% comment %} Check if the post's tags array has any intersection with the filter array {% endcomment %}
+    {% assign tags = post.tags | join: " " %}
+    {% if tags contains "Programming" or tags contains "Tech" or tags contains "Linux" %}
+      <li>
+        {{ post.date | date: "%b %d, %Y" }} – <a class="mt-1" href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+

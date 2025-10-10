@@ -3,6 +3,7 @@ layout: default
 permalink: /proses-migrasi-kanyaah-ke-aplikasi-web
 title: Migrasi Kanyaah ke Aplikasi Web
 image: /assets/images/adi-og.jpg
+tags: Tech SideHustle
 ---
 
 Saya punya side hustle kecil-kecilan. Namanya **[Kanyaah](https://kanyaah.com)**. Fokus ke undangan online, khususnya pernikahan. Tapi sekarang udah mendukung undangan khitan juga.

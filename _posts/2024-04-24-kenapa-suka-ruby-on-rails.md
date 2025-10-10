@@ -3,6 +3,7 @@ layout: default
 title: Alasan Kenapa Saya Suka Ruby on Rails
 permalink: /alasan-kenapa-saya-suka-rails
 image: /assets/images/adi-og.jpg
+tags: Programming Tech
 ---
 
 Ada satu fun fact soal diri saya: saya masuk ke bidang web development karena laptop saya kentang 😂

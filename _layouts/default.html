@@ -38,12 +38,12 @@
         </nav>
       </heading>
       <article class="mt-8">
+        {% if page.date %}
+          <small class="text-gray inline-block mb-2">
+            {{ page.date | date: "%b %-d, %Y" }}
+          </small>
+        {% endif %}
         {% unless links contains page.url %}
-          {% unless navlinks contains page.url %}
-            <small class="text-gray inline-block mb-2">
-              {{ page.date | date: "%b %-d, %Y" }}
-            </small>
-          {% endunless%}
           <h1 class="mt-0 page-title">{{ page.title }}</h1>
         {% endunless %}
         {{ content }}

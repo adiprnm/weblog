@@ -3,6 +3,7 @@ layout: default
 title: Alasan Saya Suka Pakai Linux
 permalink: /alasan-saya-suka-pakai-linux
 image: /assets/images/adi-og.jpg
+tags: Tech
 ---
 
 Mau cerita sedikit soal pengalaman saya pakai Linux. Dari yang awalnya "ini OS apaan sih" jadi OS favorit saya sampai saat ini.

@@ -3,6 +3,7 @@ layout: default
 title: Harga Sebuah Kebebasan
 permalink: /harga-sebuah-kebebasan
 image: /assets/images/adi-og.jpg
+tags: Tech
 ---
 
 Beberapa waktu lalu, saya agak sedikit dilema ketika memilih platform untuk blogging. Di satu sisi, saya perlu analytic website. WordPress punya ini, dan cukup lengkap. Di sisi lain, untuk perihal website, saya suka kalau saya punya kontrol penuh terhadap website saya. Jekyll unggul dalam hal ini.

@@ -3,6 +3,7 @@ layout: default
 title: Software Harus Punya Visi
 permalink: /software-harus-punya-visi
 image: /assets/images/adi-og.jpg
+tags: SideHustle
 ---
 
 Ketika mengembangkan salah satu fitur di [Gawéeun](https://gaweeun.my.id), saya hampir terjebak. Ada satu fitur yang, pikir saya, akan bagus kalau saya terapkan.
