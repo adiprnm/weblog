@@ -3,6 +3,7 @@ layout: default
 permalink: /liburan-ke-yogyakarta-part-1
 title: "(1/3) Liburan ke Yogyakarta: Persiapan dan Hari Pertama"
 image: /assets/images/adi-og.jpg
+tags: Liburan
 ---
 
 Saya sebelumnya pernah nulis tentang perjalanan liburan saya bersama istri di Twitter, di kereta tepat ketika dalam perjalanan pulang. Tapi sampai sekarang belum dilanjut karena keburu malas nulis, hehe.
