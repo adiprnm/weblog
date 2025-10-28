@@ -9,5 +9,7 @@ reply_to_email: none
 - [Buku Tamu](/buku-tamu)
 - [Kontak](/kontak)
 - [Newsletter](/newsletter)
+- [Project](/project)
 - [Teknologia](/teknologia)
+- [Toko](https://shop.adipurnm.com)
 - [Tulisan Menarik](/tulisan-menarik)

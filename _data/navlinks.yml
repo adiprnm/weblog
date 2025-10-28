@@ -4,9 +4,7 @@
   url: /blog
 - name: Now
   url: /now
-- name: Project
-  url: /project
-- name: Toko
-  url: https://shop.adipurnm.my.id
+- name: Adi on Rails
+  url: https://adionrails.com
 - name: Lainnya
   url: /others
