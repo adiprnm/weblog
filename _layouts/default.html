@@ -5,11 +5,7 @@
     <meta charset="utf-8">
     {% seo %}
     <link rel="icon" href="/assets/images/favicon.svg">
-    <style>
-      @font-face{font-family:"Figtree";src:url("/assets/fonts/Figtree-Regular.ttf") format("truetype");font-display:swap}@font-face{font-family:"Figtree";src:url("/assets/fonts/Figtree-Bold.ttf") format("truetype");font-weight:600;font-display:swap}@font-face{font-family:"Figtree";src:url("/assets/fonts/Figtree-Italic.ttf") format("truetype");font-style:italic;font-display:swap}@font-face{font-family:"Figtree";src:url("/assets/fonts/Figtree-BoldItalic.ttf");font-display:swap;font-weight:600;font-style:italic}*{box-sizing:border-box}body{font-family:"Figtree";margin:0;padding:0}a{color:#0172ad}li a{text-decoration:none}nav a{text-decoration:none}p,li{line-height:1.5em}article hr{border:none;border-bottom:1px solid gray;margin:2rem auto;width:50px}article p a{text-decoration:underline}img{width:100%;border-radius:4px}@media (min-width:768px){img{width:80%}}.container{max-width:720px;margin:0 auto}.mb-16{margin-bottom:4rem}.mt-8{margin-top:2rem}.mt-6{margin-top:1.5rem}.mt-2{margin-top:0.5rem}.mb-4{margin-bottom:1rem}.mb-0{margin-bottom:0}.mr-2{margin-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.flex{display:flex}.text-center{text-align:center}.text-gray{color:gray}.text-red{color:red}.underline{text-decoration:underline}.flex{display:flex}.items-center{align-items:center}.text-sm{font-size:0.875rem}.leading-loose{line-height:2em}@media (prefers-color-scheme:dark){body{background:#121420;color:#E4E6EB}a{color:#B0B3BA}nav a,nav a:visited,.text-gray,article a:visited{color:#7A7E8A}footer.text-gray{color:#B0B3BA}footer a{color:#7A7E8A}}.status{padding:1rem;border:1px solid #7A7E8A;border-radius:4px;background-color:#fcfcfc;color:#444444;box-shadow:0 1px 2px rgba(0,0,0,0.1);margin-bottom:3rem}@media (prefers-color-scheme:dark){.status{background-color:#121420;color:#B0B3BA}}.profile-photo{width:36px;height:36px;border-radius:50%;margin-right:1rem}.site-title{font-size:1.5rem;font-weight:600;margin:0}.site-title-anchor{text-decoration:none;color:inherit};.page-title{font-size:2em;}
-    </style>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ "/assets/css/main.css" | relative_url }}">
-    <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"></noscript>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/assets/fonts/Figtree-Italic.ttf" as="font" type="font/ttf" crossorigin>
@@ -23,7 +19,7 @@
       {% assign links = "/, /blog" | split: ", " %}
       {% assign navlinks = site.data.navlinks | map: "url" %}
       <heading>
-        <a href="{{ site.url }}" class="flex items-center mt-6 mb-4 site-title-anchor">
+        <a href="{{ site.url }}" class="flex items-center mt-6 mb-2 site-title-anchor">
           <img src="/assets/images/adi-small.webp" alt="adipurnm" class="profile-photo">
           <p class="site-title">{{ site.title }}</p>
         </a>
@@ -37,6 +33,7 @@
           {% endfor %}
         </nav>
       </heading>
+
       <article class="mt-8">
         {% if page.date %}
           <small class="text-gray inline-block mb-2">
@@ -46,14 +43,17 @@
         {% unless links contains page.url %}
           <h1 class="mt-0 page-title">{{ page.title }}</h1>
         {% endunless %}
+
         {{ content }}
+
+        {% assign reply_to_email = page.reply_to_email | default: true %}
+        {% if reply_to_email != "none" %}
+          <blockquote>
+            Balas melalui <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">email</a>.
+          </blockquote>
+        {% endif %}
       </article>
-      {% assign reply_to_email = page.reply_to_email | default: true %}
-      {% if reply_to_email != "none" %}
-      <blockquote>
-        Balas melalui <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">email</a>.
-      </blockquote>
-      {% endif %}
+
       <footer class="text-gray mt-8 mb-16 text-center text-sm">
         {% assign latest_status = site.data.statuses | first %}
         {% if latest_status %}
@@ -65,6 +65,8 @@
         <p>
           Ditulis oleh manusia.<br>
           Subscribe <a href="/newsletter">newsletter</a> atau tangkap <a class="underline" href="/feed.xml">feed RSS</a>.
+          <br><br>
+          <a href="#">Kembali ke atas</a>
         </p>
       </footer>
     </main>
