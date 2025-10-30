@@ -11,7 +11,7 @@ description: List project personal dan komersial. Selain bikin aplikasi, saya ju
 * [adipurnm's shop: Jual e-book, source code, dan produk digital lainnya](https://shop.adipurnm.com){:target="_blank"}
 * [Kanyaah: Undangan pernikahan digital](https://kanyaah.com){:target="_blank"}
 * [SimpleBlog: No-nonsense, self-hostable blogging platform.](https://github.com/adiprnm/simpleblog){:target="_blank"} (finished software)
-* [SimpleStats: No-nonsense, self-hostable website analytic platform.](https://github.com/adiprnm/simplestats){:target="_blank"} (finished softawre)
+* [SimpleStats: No-nonsense, self-hostable website analytic platform.](https://github.com/adiprnm/simplestats){:target="_blank"} (finished software)
 * [Gawéeun: To-do apps. Focused.](https://gaweeun.my.id){:target="_blank"} (finished software) (nonaktif)
 * [ToWebP: Convert gambar apapun jadi WebP.](https://towebp.adipurnm.my.id){:target="_blank"} (nonaktif)
 * [Wang: Aplikasi financial tracker favoritmu.](https://gaweeun.my.id){:target="_blank"} (nonaktif)
