@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+.mb-16 { margin-bottom: 2rem; }
+.mt-16 { margin-top: 2rem; }
+.mt-32 { margin-top: 4rem; }
+.parse-result {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--pico-blockquote-border-color);
+  line-height: 1.75;
+}
+.text-center { text-align: center; }
+.donate-button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}

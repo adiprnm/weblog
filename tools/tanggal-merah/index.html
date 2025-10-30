@@ -1,0 +1,62 @@
+---
+title: Tanggal Merah Terdekat
+description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf">
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <p style="margin-top: 4rem;">Tanggal merah terdekat<br/>berikutnya adalah...</p>
+      <div class="nearest-holiday">
+        <p style="text-decoration: none; font-size: 32px">🎉🎉🎉</p>
+        <h2 id="nearest-holiday-date">
+          <span class="loader"></span>
+        </h2>
+        <p id="nearest-holiday-name">
+          <span class="loader"></span>
+        </p>
+      </div>
+      <p id="date-diff">
+        <span class="loader"></span>
+      </p>
+      <a href="https://calendar.google.com" id="open-calendar-button" target="_blank" class="open-calendar">Ajukan Cuti di Google Calendar</a>
+
+      <p>atau</p>
+
+      <button onclick="toggleNationalHolidays(event)" class="toggle-national-holidays">Lihat Semua Hari Libur</button>
+
+      <div id="national-holidays" hidden>
+      </div>
+
+      <footer class="footer">
+        <p>
+          Sumber data berasal dari <a href="https://api-harilibur.vercel.app">api-harilibur.vercel.app</a> dan hanya mengambil hari libur nasional.
+        </p>
+
+        <p>Terinspirasi dari <a href="https://tanggalmerah.vercel.app/">https://tanggalmerah.vercel.app</a> dengan beberapa peningkatan.</p>
+
+        <p style="margin-top: 2rem; font-size: 1rem;">Website by <a href="{{ site.url }}">adipurnm</a>.</p>
+        <a href="{{ site.donation_url }}" class="primary" target="_blank" style="font-size: 1rem;">Traktir saya jajan</a>
+        <a href="/tools" style="text-align: center; display: block; font-size: 1rem; margin-top: 2rem;">Lihat tools lainnya</a>
+      </footer>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", getNearestPublicHoliday)
+  </script>
+</body>
+</html>

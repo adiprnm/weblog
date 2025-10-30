@@ -1,0 +1,81 @@
+---
+title: URL Parser
+description: Parse URL beserta query string ke format yang mudah dibaca.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/url-parser/main.css" | relative_url }}">
+</head>
+<body>
+  <main class="container">
+    <a href="/tools" style="margin-top: 1rem; display: inline-block;">Lihat tools lainnya</a>
+    <h1 class="mt-16">URL Parser</h1>
+    <input type="url" placeholder="Masukkan URL" id="url">
+    <button id="parseButton">Parse</button>
+    <h2 class="mt-16">Result</h2>
+    <pre id="result" class="parse-result">Please enter the URL in the above field.</pre>
+
+    <footer class="mt-32 mb-16 text-center">
+      <p>Website by <a href="{{ site.url }}">adipurnm</a></p>
+      <a href="{{ site.donate_url }}" role="button" target="_blank" class="donate-button">Traktir saya jajan</a>
+    </footer>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      parseButton.addEventListener("click", function() {
+        const urlValue = document.getElementById("url").value.trim()
+        if (urlValue == "") alert("URL tidak boleh kosong!")
+
+        const url = new URL(urlValue)
+        const searchParams = decodeURIComponent(url.search.substring(1, url.search.length)).split("&")
+        let processed = {}
+
+        let splitted;
+        for (let token of searchParams) {
+          splitted = token.split("=")
+          let key = splitted[0]
+          let value = splitted[1]
+          if (key.endsWith("[]")) {
+            key = key.substring(0, key.length - 2)
+            if (processed[key] == null || processed[key] == undefined) processed[key] = []
+
+            processed[key].push(value)
+          } else {
+            processed[key] = value
+          }
+        }
+
+        const pattern = /\[[a-z1-9_]+\]/
+        for (let [key, value] of Object.entries(processed)) {
+          let objectKey = key.match(pattern)
+          if (objectKey) {
+            oldValue = processed[key]
+            delete processed[key]
+            objectKey = objectKey[0].substring(1, objectKey[0].length - 1)
+            key = key.replace(pattern, "")
+            if (processed[key] == null) processed[key] = {}
+            processed[key][objectKey] = oldValue
+          }
+        }
+
+        const content = `
+Host name        : ${ url.host }
+Path             : ${ url.pathname }
+Query parameters :
+${ JSON.stringify(processed, null, 2) }
+        `
+        result.textContent = content.trim()
+      })
+    })
+  </script>
+</body>
+</html>

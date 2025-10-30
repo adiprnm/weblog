@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 600;
+}
+
+body {
+  background-color: #f2f7fa;
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  margin: 64px auto 0 auto;
+}
+
+.wrapper {
+  line-height: 1.5em;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nearest-holiday {
+  text-align: center;
+  margin: 32px;
+}
+
+.nearest-holiday > p {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.nearest-holiday > h2 {
+  color: #0172ad;
+}
+
+.open-calendar {
+  display: block;
+  padding: 8px 16px;
+  background-color: #0172ad;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  margin-top: 16px;
+  animation: bounce 1s infinite;
+}
+
+.primary {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0172ad;
+  border-radius: 100px;
+  color: white!important;
+  text-decoration: none;
+  margin-top: 16px;
+  margin: 0 auto;
+}
+
+
+.open-calendar:hover {
+  opacity: 0.9;
+}
+
+p {
+  color: rgb(41, 41, 41);
+}
+
+#date-diff {
+  text-align: center;
+}
+
+.footer {
+  font-size: 13px;
+  text-align: center;
+  padding: 16px;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  color: #0172ad;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e75656;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+#national-holidays {
+  font-size: 16px;
+  padding: 0;
+  width: 80%;
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-top: 32px;
+  scrollbar-width: none;
+}
+
+#national-holidays::-webkit-scrollbar {
+  background-color: #ffeae9;
+  width: 5px;
+}
+
+#national-holidays::-webkit-scrollbar-thumb {
+  background: rgba(255, 123, 123);
+  border-radius: 100px;
+}
+
+#national-holidays::-webkit-scrollbar-track {
+  background: rgba(255, 209, 209, 0.308);
+  border-radius: 100px;
+}
+
+#national-holidays li {
+  margin: 16px;
+  line-height: 1.5em;
+}
+
+.toggle-national-holidays, .outline {
+  font-size: 1rem;
+  color: #0172ad;
+  background-color: transparent;
+  border: 1px solid #0172ad;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.toggle-national-holidays:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
