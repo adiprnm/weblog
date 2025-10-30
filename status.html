@@ -1,0 +1,10 @@
+---
+layout: default
+title: Status
+---
+
+{% for status in site.data.statuses %}
+  <article class="mb-4 status">
+    <p class="mt-0 mb-0"><strong>{{ status.date | date: "%b %-d, %Y" }}</strong>: {{ status.status }}</p>
+  </article>
+{% endfor %}

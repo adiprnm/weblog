@@ -57,9 +57,11 @@
       <footer class="text-gray mt-8 mb-16 text-center text-sm">
         {% assign latest_status = site.data.statuses | first %}
         {% if latest_status %}
-        <div class="mb-4 status">
+        <div class="status mb-12">
           <strong>Update Kehidupan</strong>
-          <p class="mt-2 mb-0"><strong>{{ latest_status.date | date: "%b %-d, %Y" }}</strong>: {{ latest_status.status }}</p>
+          <p class="mt-2"><strong>{{ latest_status.date | date: "%b %-d, %Y" }}</strong>: {{ latest_status.status }}</p>
+
+          <a class="no-text-decoration" href="/status">Lihat status lainnya</a>
         </div>
         {% endif %}
         <p>
