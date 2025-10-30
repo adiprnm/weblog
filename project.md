@@ -10,7 +10,6 @@ description: List project personal dan komersial. Selain bikin aplikasi, saya ju
 * [AdiOnRails: Belajar Ruby dan Rails dalam bahasa Indonesia](https://adionrails.com){:target="_blank"}
 * [adipurnm's shop: Jual e-book, source code, dan produk digital lainnya](https://shop.adipurnm.com){:target="_blank"}
 * [Kanyaah: Undangan pernikahan digital](https://kanyaah.com){:target="_blank"}
-* [Tanggal Merah: Lihat tanggal merah terdekat, lalu ajukan cuti.](https://me.adipurnm.my.id/tools/tanggal-merah){:target="_blank"}
 * [SimpleBlog: No-nonsense, self-hostable blogging platform.](https://github.com/adiprnm/simpleblog){:target="_blank"} (finished software)
 * [SimpleStats: No-nonsense, self-hostable website analytic platform.](https://github.com/adiprnm/simplestats){:target="_blank"} (finished softawre)
 * [Gawéeun: To-do apps. Focused.](https://gaweeun.my.id){:target="_blank"} (finished software) (nonaktif)
