@@ -344,3 +344,17 @@ input[type=submit] {
   text-decoration: none;
   color: inherit;
 }
+.post-date {
+  font-family: monospace;
+  font-size: 14px;
+}
+.profile-picture {
+  float: left;
+  margin-top: 1.375rem;
+  margin-right: 1rem;
+  width: 120px!important;
+
+  @media (min-width: 768px) {
+    width: 140px!important;
+  }
+}

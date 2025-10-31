@@ -18,7 +18,7 @@ reply_to_email: none
 <ul>
   {% for newsletter in newsletters %}
     <li>
-      {{ newsletter.date | date: "%b %d, %Y" }} – <a class="mt-1" href="{{ newsletter.url }}">{{ newsletter.title }}</a>
+      <span class="post-date">{{ newsletter.date | date: "%b %d, %Y" }}</span> – <a class="mt-1" href="{{ newsletter.url }}">{{ newsletter.title }}</a>
     </li>
   {% endfor %}
 </ul>

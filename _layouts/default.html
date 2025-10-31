@@ -25,10 +25,14 @@
         </a>
         <nav class="leading-loose">
           {% for link in site.data.navlinks %}
-            {% if link.text != "" %}
+            {% if link.text %}
               <a href="{{ link.url }}">{{ link.name }}</a><sup class="mr-2 text-red"> <small>{{ link.text }}</small></sup>
             {% else %}
-              <a class="mr-2" href="{{ link.url }}">{{ link.name }}</a>
+              {% if link.url contains "http" %}
+                <a class="mr-2" href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+              {% else %}
+                <a class="mr-2" href="{{ link.url }}">{{ link.name }}</a>
+              {% endif %}
             {% endif %}
           {% endfor %}
         </nav>
@@ -37,7 +41,7 @@
       <article class="mt-8">
         {% if page.date %}
           <small class="text-gray inline-block mb-2">
-            {{ page.date | date: "%b %-d, %Y" }}
+            {{ page.date | date: "%B %-d, %Y" }}
           </small>
         {% endif %}
         {% unless links contains page.url %}

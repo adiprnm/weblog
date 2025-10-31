@@ -11,7 +11,7 @@ reply_to_email: none
     {% assign tags = post.tags | join: " " %}
     {% if tags contains "Programming" or tags contains "Tech" or tags contains "Linux" %}
       <li>
-        {{ post.date | date: "%b %d, %Y" }} – <a class="mt-1" href="{{ post.url }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> – <a class="mt-1" href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
