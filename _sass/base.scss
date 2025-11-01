@@ -364,7 +364,7 @@ details summary {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 0.25rem;
-  margin-left: 0.25rem;
+  margin-left: -0.25rem;
 }
 details summary::-webkit-details-marker {
   display: none;
@@ -388,6 +388,7 @@ details summary::before {
   background-repeat: no-repeat;
   content: "";
   transition: transform 0.2s ease-in-out;
+  margin-right: 0.25rem;
 }
 details[open] > summary::after {
   transform: rotate(0);
