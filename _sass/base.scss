@@ -358,6 +358,10 @@ input[type=submit] {
     width: 140px!important;
   }
 }
+details {
+  margin-bottom: 0.5rem;
+  display: block;
+}
 details summary {
   list-style-type: none;
   line-height: 1rem;
