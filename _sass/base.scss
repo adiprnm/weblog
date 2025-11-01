@@ -364,6 +364,7 @@ details summary {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
 }
 details summary::-webkit-details-marker {
   display: none;
@@ -374,7 +375,7 @@ details summary::marker {
 details summary::-moz-list-bullet {
   list-style-type: none;
 }
-details summary::after {
+details summary::before {
   display: block;
   width: 1rem;
   height: 1rem;
