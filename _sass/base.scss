@@ -388,7 +388,6 @@ details summary::before {
   content: "";
   transition: transform 0.2s ease-in-out;
   margin-right: 0.25rem;
-  margin-left: -0.25rem;
 }
 details[open] > summary::before {
   transform: rotate(0);
