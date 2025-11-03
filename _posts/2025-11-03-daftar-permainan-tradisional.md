@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Daftar permainan tradisional yang semakin hilang tergerus zaman
-tags: Gaming
+tags: Budaya
 ---
 
 Di suatu malam, saya dan istri ngobrol-ngobrol di ruang keluarga. Salah satu topiknya adalah nostalgia permainan tradisional yang sekarang kian tergerus karena modernisasi.
@@ -9,6 +9,9 @@ Di suatu malam, saya dan istri ngobrol-ngobrol di ruang keluarga. Salah satu top
 Lewat tulisan ini, saya ingin mendokumentasikan apa saja permainan tradisional yang dulu sering kami mainkan saat teknologi informasi belum secanggih sekarang, dan bagaimana cara mainnya (seingat saya).
 
 ## Kaléci/Kelereng
+
+![Adu Kelereng](https://img.merahputih.com/media/bd/14/40/bd1440f59c58e851df9918d0b97913a6.jpg)
+*Sumber: [merahputih.com](https://www.merahputih.com/post/read/6-permainan-tradisional-era-90-an-yang-mulai-tenggelam-ditelan-zaman){:target="_blank"}*
 
 Permainan ini setidaknya ada dua mode: mode batu dan mode pola.
 
@@ -24,7 +27,7 @@ Mode lainnya adalah mode pola. Sistemnya pemain akan memasang kelereng sejumlah 
 
 Biasanya, pola tersebut berupa persegi yang dibagi 4. Kelereng kemudian ditempatkan di sudut-sudut persegi.
 
-- Untuk mengalahkan pemain lain, pemain setidaknya harus memiliki satu kelereng yang diperoleh dari persegi dengan cara menumbukkan kelereng ke kelereng yang ada pada persegi. 
+- Untuk mengalahkan pemain lain, pemain setidaknya harus memiliki satu kelereng yang diperoleh dari persegi dengan cara menumbukkan kelereng ke kelereng yang ada pada persegi.
 - Ketika permainan dimulai, pemain boleh langsung menargetkan kelereng pada persegi. Kelereng yang keluar dari persegi menjadi milik pemain selama sesi permainan berlangsung.
 - Jika kelereng pemain berada dalam persegi, pemain kalah.
 - Jika pemain mengenai kelereng pemain lain:
@@ -35,6 +38,9 @@ Biasanya, pola tersebut berupa persegi yang dibagi 4. Kelereng kemudian ditempat
 
 ## Ucing Babét/Lempar Bola
 
+![Ucing Babet](https://i.ytimg.com/vi/voN0WdUxPes/maxresdefault.jpg)
+*Sumber: [Imas Eva Nurviati (IMAS EVA CHANNEL)](https://www.youtube.com/watch?v=voN0WdUxPes){:target="_blank"}*
+
 Prinsipnya sederhana. Satu orang ditentukan sebagai "ucing" atau pemegang bola. Bola di sini bisa berupa bola tenis, atau bola kertas. Pokoknya bola seukuran telapak tangan.
 
 Orang yang terkena bola tersebut akan jadi kawan si ucing. Permainan berakhir saat semua pemain jadi ucing.
@@ -42,6 +48,9 @@ Orang yang terkena bola tersebut akan jadi kawan si ucing. Permainan berakhir sa
 Saya sarankan main di tempat yang luas dan nggak ada barang-barang, misal di lapangan, biar bisa menikmati serunya menghindari lemparan bola si ucing, hahaha.
 
 ## Gatrik
+
+![Gatrik](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc-MQe7lDPbRwqb0mb6yoBVBBkly7J_N-Wc2dnCLuKyQzvScmWP0jnPKMpL6ksD8jWzHYxE0y83dv0fYLTuLAFusLSRrM42l_OPSP-x5GRQl7DOp6Yjn8W3Z2iIS_UXNLqbsnlwh5US-Y/s640/6241.jpg)
+*Sumber: [desapasirpanjang.blogspot.com](https://desapasirpanjang.blogspot.com/2017/08/permainan-gatrik.html){:target="_blank"}*
 
 Untuk memainkan permainan ini, kamu perlu dua bilah bambu berukuran berbeda. Satu panjang dan satu pendek.
 
@@ -67,16 +76,19 @@ Kelompok yang menang adalah kelompok yang poinnya paling besar, atau kelompok ya
 
 ## Péclé/Engklek/Tapak Gunung
 
+![Tapak Gunung](https://pdbifiles.nos.jkt-1.neo.id/files/2018/08/08/indri_andina07_engklekan.jpg)
+*Sumber: [budaya-indonesia.org](https://budaya-indonesia.org/Permainan-Pecle){:target="_blank"}*
+
 Untuk memainkan permainan ini, pertama kita harus membuat beberapa kotak yang saling terhubung. Polanya bebas, tapi yang biasa saya mainkan dulu itu polanya seperti ini:
 
-![Pola Tapak Gunung](../assets/images/2025/Screenshot_20251102_130626_Samsung.webp)
+![Pola Tapak Gunung](/assets/images/2025/0f5a7df4-13ed-46f2-b7cc-a4cdbd26abab.webp)
 
 Setelah digambar, kita memerlukan barang pipih atau gaco. Biasanya dari pecahan keramik, genteng, atau atap rumah.
 
 Giliran ditentukan melalui hompimpa. Pemain kemudian melempar gaco ke dalam pola persegi. Kalau keluar, giliran pemain tersebut berakhir dan lanjut giliran berikutnya.
 
 - pemain harus melewati kotak-kotak tersebut menggunakan satu kaki. Kalau menginjak garis, giliran berakhir.
-- pemain tidak boleh menginjak kotak yang ada gaconya. Kalau menginjak, giliran berakhir. 
+- pemain tidak boleh menginjak kotak yang ada gaconya. Kalau menginjak, giliran berakhir.
 - pemain boleh menginjakkan kedua kaki di pola gunung.
 - pemain harus mengambil gaconya dulu sebelum lanjut ke giliran selanjutnya, dengan posisi satu kaki.
 - rute polanya: 3 kotak pertama, 3 kotak sebelah kanan, gunung, 3 kotak sebelah kiri, 3 kotak pertama lagi.
@@ -85,11 +97,14 @@ Giliran ditentukan melalui hompimpa. Pemain kemudian melempar gaco ke dalam pola
 - pemain tidak boleh menginjak rumah pemain lain. Jika menginjak, giliran berganti ke pemain selanjutnya.
 - permainan berakhir jika semua kotak sudah terisi oleh rumah. Pemain yang rumahnya paling banyak adalah pemenangnya.
 
-## Congkak
+## Congklak
 
-Permainan ini terdiri dari dua pemain saja. Untuk memainkan permainan ini, perlu papan dan biji congkak. Papan congkak berisi 7 kolam kecil yang saling bersebrangan dan 2 kolam besar di tepi papan congkak.
+![Congklak](https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/08/04/3431520656.jpg)
+*Sumber: [sewaktu.com](https://www.sewaktu.com/lifestyle/pr-1534054708/manfaat-filosofi-dan-cara-bermain-congklak-atau-congkak){:target="_blank"}*
 
-Masing-masing pemain punya 49 biji congkak, sehingga setiap kolam kecil diisi 7 biji congkak, sementara kolam besar dibiarkan kosong.
+Permainan ini terdiri dari dua pemain saja. Untuk memainkan permainan ini, perlu papan dan biji congklak. Papan congklak berisi 7 kolam kecil yang saling bersebrangan dan 2 kolam besar di tepi papan congklak.
+
+Masing-masing pemain punya 49 biji congklak, sehingga setiap kolam kecil diisi 7 biji congklak, sementara kolam besar dibiarkan kosong.
 
 Pemain harus mengisi kolam dengan biji dengan ketentuan sebagai berikut:
 - memulai giliran dengan mengambil biji dari kolam sendiri
@@ -108,9 +123,12 @@ Jika biji terakhir menempati kolam lawan, maka giliran berakhir tanpa mendapatka
 - jika kolam seberang kosong, maka giliran selesai tanpa mendapatkan apa-apa
 - jika kolam seberang ada isinya, maka biji pada kolam seberang dan kolam sendiri diambil dan disimpan di kolam besar. Nama lainnya adalah nembak. Giliran pun berakhir.
 
-Permainan selesai jika tidak ada lagi biji congkak yang tersisa. Pemain dengan jumlah biji congkak terbanyak adalah pemenangnya.
+Permainan selesai jika tidak ada lagi biji congklak yang tersisa. Pemain dengan jumlah biji congklak terbanyak adalah pemenangnya.
 
 ## Adu Gambar
+
+![Adu Gambar](https://bandungbergerak.id/cdn/3/7/2/372_683x468.jpg)
+*Sumber: [bandungbergerak.id](https://bandungbergerak.id/article/detail/320/geografi-ingatan-4-gambar-umbul){:target="_blank"}*
 
 Adu gambar ini ada dua mode.
 
@@ -124,7 +142,10 @@ Sejumlah gambar disimpan di atas permukaan. Pemain berusaha membalik gambar tanp
 
 Ouya, gambar ini duku biasanya dijual di warung-warung. Biasanya dalam ukuran besar dan harus kita potong kecil-kecil dulu supaya bisa dimainkan. Per lembar besar bisa menghasilkan 30 sampai 50 gambar kecil.
 
-## Kuartet
+## Kwartet
+
+![Kwartet](https://images.tokopedia.net/img/cache/700/product-1/2019/3/5/1188619/1188619_81bcb1e0-a534-4339-8603-4d0c4027d85e_864_864.jpg)
+*Sumber: [tokopedia.com](https://www.tokopedia.com/waterlifestore/kartu-kwartet-mainan-jadul-era-90an-random){:target="_blank"}*
 
 Berbeda dengan adu gambar, kartu untuk permainan kwartet dijual di warung-warung dengan kondisi sudah terpotong rapi. Kartu dibagi menjadi beberapa kategori. Satu kategori berisi empat kartu. Biasanya satu set kartu berisi sekitar 8 sampai 10 kategori.
 
@@ -144,6 +165,9 @@ Pemain dengan jumlah kwartet yang paling banyak adalah pemenangnya.
 
 ## Sepak Bola Kertas
 
+![Sepak Bola Kertas](https://i.ytimg.com/vi/3NZlClBEhrI/maxresdefault.jpg)
+*Sumber: [Mainan Channel](https://www.youtube.com/watch?v=3NZlClBEhrI){:target="_blank"}*
+
 Permainan ini hanya bisa dimainkan oleh dua orang pemain.
 
 Untuk memainkan ini, kita perlu
@@ -159,6 +183,9 @@ Tugas pemain adalah mencetak gol sebanyak-banyaknya. Pemain dengan skor terbanya
 
 ## BP-BPan
 
+![BP-BPan](https://indonesiaone.org/wp-content/uploads/2022/03/Boneka-Bp-2.jpg)
+* Sumber: [indonesiaone.org](https://indonesiaone.org/permainan-legendaris-anak-perempuan-tahun-90an-boneka-bp-bongkar-pasang/){:target="_blank"}*
+
 Permainan ini adalah permainan non-kompetitif, tapi lebih ke role-play, dan biasa dimainkan oleh anak perempuan.
 
 Biasanya, warung akan menjual satu lembar kertas yang berisi satu hingga dua karakter, lengkap dengan pakaian dan aksesorisnya.
@@ -168,6 +195,9 @@ Pemain kemudian mengarang cerita berdasarkan pakaian dan aksesoris yang dipakai 
 Hayoo siapa di sini yang dulu seneng banget main BP-BPan? Selamat bernostalgia, haha.
 
 ## Bola Békles/Bekel
+
+![Bola bekel](https://assets.kompasiana.com/items/album/2019/12/27/bekel-5e05887c097f3655b9683f63.jpg)
+* Sumber: [kompasiana.com](https://www.kompasiana.com/baityjannaty0390/5e0587dbd541df0b90190bf2/permaian-tradisional-bola-bekel-dan-manfaatnya){:target="_blank"}*
 
 Permainan ini sepertinya masih cukup sering dimainkan sampai sekarang ini. Tapi, untuk keperluan dokumentasi, mari kita tuliskan saja di sini.
 
@@ -186,7 +216,7 @@ Setelah mi genep, kembali lagi ke mi hiji. Tapi, sekarang masuk ke sesi mi nangk
 
 Setelah mi nangkar, ada mi nangkub. Ini kebalikannya mi nangkar. Jadi, pemain harus menghadapkan semua biji kewuk ke bawah. Sisanya, aturannya masih sama dengan mi nangkar.
 
-Setelah mi nangkub, ada lagi mi naspél. Ini mi yang paling menantang sih, haha. 
+Setelah mi nangkub, ada lagi mi naspél. Ini mi yang paling menantang sih, haha.
 
 Pada dasarnya mi ini sama dengan mi nangkub. Hanya saja, pemain harus menyusun kewuk dalam posisi nangkub sehingga mirip dengan angka 6 pada kartu gaplé/domino.
 
@@ -203,6 +233,9 @@ Giliran pemain akan selesai ketika:
 Pemain dengan poin tertinggi adalah pemenangnya.
 
 ## Gobak Sodor
+
+![Gobak sodor](https://cdn.grid.id/crop/0x0:0x0/700x465/photo/2025/02/18/cara-bermain-permainan-tradision-20250218104427.jpg)
+*Sumber: [bobo.gird.id](https://bobo.grid.id/read/084218241/permainan-tradisional-gobak-sodor-ini-aturan-bermainnya?page=all){:target="_blank"}*
 
 Permainan ini perlu dilakukan di lapangan yang cukup luas, seperti permainan ucing bola, kurang lebih sekitar 9x4 meter. Di atas permukaan lapangan, dibuat pola 6 persegi, panjang 2 kotak dan lebar 3 kotak.
 
@@ -221,3 +254,5 @@ Tim dengan jumlah poin paling banyak yang jadi pemenangnya.
 Fyuh... panjang juga ya ternyata. Cukup repot nulis sepanjang ini dari HP, haha.
 
 Sebenarnya masih ada beberapa permainan tradisional lagi, tapi segini dulu. Nanti saya tambahkan kalau saya ingat (dan mood).
+
+Semoga tulisan ini bisa jadi referensi di masa depan, di mana anak-anak sudah lupa bahwa permainan offline generasi 90an ternyata seru banget!
