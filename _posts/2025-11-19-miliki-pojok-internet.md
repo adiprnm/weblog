@@ -8,7 +8,7 @@ Buat kamu semua yang belum punya pojok di internet yang luas ini, satu saran dar
 
 **Miliki blog personal**. Isi apapun dengan yang kamu minati. Jangan terpaku kepada niche. Tulis aja apa yang ada di kepalamu. Opini, jurnal harian, itinerary liburan, resep masakan, apapun.
 
-**Beli domain**. Biar orang-orang mudah mengingat blog kamu. Nggak perlu yang mahal-mahal. Domain .my.id udah sangat terjangkau. Kalau ada modal, belilah domain .com, .dev, .blog, atau .dev sekalian.
+**Beli domain**. Biar orang-orang mudah mengingat blog kamu. Nggak perlu yang mahal-mahal. Domain .my.id dan .web.id udah sangat terjangkau. Kalau ada modal, belilah domain .com, .dev, .blog, atau .space sekalian.
 
 **Pilih platform blogging yang nggak vendor lock-in**. Platform yang menyediakan fasilitas export tulisan-tulisanmu. Biar kalau platform bloggingmu itu kenapa-kenapa, kamu bisa migrasi ke platform lain dengan mudah. Ingat, tulisanmu adalah milikmu! Jangan sampai kehilangan apa yang jadi milikmu.
 
@@ -26,6 +26,6 @@ Kenapa emangnya harus punya blog pribadi?
 
 Nggak ada alasan khusus sebenarnya. Sesederhana hanya karena punya blog pribadi itu menyenangkan.
 
-Bayangin aja, kamu punya space yang bisa kamu isi dengan apapun yang kamu minati. Hampir tidak ada batasan, apalagi kalau kamu self-hosting blog kamu. Orang-orang yang melihat dan membaca apa yang kamu bagikan di blog bisa jadi juga tertarik dengan apa yang kamu bagikan, dan akhirnya mulai mengikuti tulisan-tulisanmu selanjutnya.
+Bayangin aja, kamu punya space yang bisa kamu isi dengan apapun yang kamu minati. Hampir nggak ada batasan, apalagi kalau kamu self-hosting blog kamu. Tidak ada lagi tiba-tiba tulisanmu dihapus oleh bot atau sistem sang pemilik platform karena alasan yang nggak jelas dan fair.
 
-Bukankah itu esensi dari personal branding?
+Orang-orang yang melihat dan membaca apa yang kamu bagikan di blog bisa jadi juga tertarik dengan apa yang kamu bagikan, dan akhirnya mulai mengikuti tulisan-tulisanmu selanjutnya. Bukankah itu esensi dari personal branding?
