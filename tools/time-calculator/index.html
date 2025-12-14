@@ -1,0 +1,104 @@
+---
+title: Time Calculator
+description: Hitung jumlah waktu yang telah berlalu dari jam-jam yang diberikan.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/time-calculator/main.css" | relative_url }}">
+</head>
+<body>
+  <main class="container">
+    <a href="/tools" style="margin-top: 1rem; display: inline-block;">Lihat tools lainnya</a>
+    <h1 class="mt-16">{{ page.title }}</h1>
+
+    <div id="timeContainer">
+      <div class="flex gap-4">
+        <input type="number" placeholder="Jam" name="hour">
+        <input type="number" placeholder="Menit" name="minute">
+        <input type="number" placeholder="Detik" name="second">
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <button id="addButton">+ Tambah waktu</button>
+    </div>
+
+    <p class="m-0">Total waktu:</p>
+    <p id="result" class="text-2xl font-bold m-0"></p>
+
+    <footer class="mt-32 mb-16 text-center">
+      <p>Website by <a href="{{ site.url }}">adipurnm</a></p>
+      <a href="{{ site.donate_url }}" role="button" target="_blank" class="donate-button">Traktir saya jajan</a>
+    </footer>
+  </main>
+
+  <script>
+    function calculateTotalTime() {
+      let totalInSeconds = 0
+
+      for (let c of timeContainer.children) {
+        let hour = c.querySelector("input[name=hour]").value
+        let timeInSecond = parseInt(hour == "" ? 0 : hour) * 3600
+
+        let minute = c.querySelector("input[name=minute]").value
+        timeInSecond += parseInt(minute == "" ? 0 : minute) * 60
+
+        let second = c.querySelector("input[name=second]").value
+        timeInSecond += parseInt(second == "" ? 0 : second)
+
+        totalInSeconds += timeInSecond
+      }
+
+      const finalSecond = totalInSeconds % 60
+      const finalMinute = parseInt((totalInSeconds / 60) % 60)
+      const finalHour = parseInt((totalInSeconds / 3600))
+
+      result.textContent = `${finalHour.toString().padStart(2, '0')}:${finalMinute.toString().padStart(2, '0')}:${finalSecond.toString().padStart(2, '0')}`
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      calculateTotalTime()
+
+      document.querySelector("input[name=hour]").addEventListener("change", calculateTotalTime)
+      document.querySelector("input[name=minute]").addEventListener("change", calculateTotalTime)
+      document.querySelector("input[name=second]").addEventListener("change", calculateTotalTime)
+
+      addButton.addEventListener("click", function() {
+        const div = document.createElement("div")
+        div.classList.add("flex")
+        div.classList.add("gap-4")
+
+        const hour = document.createElement("input")
+        hour.setAttribute("type", "number")
+        hour.setAttribute("placeholder", "Jam")
+        hour.setAttribute("name", "hour")
+        hour.addEventListener("change", calculateTotalTime)
+
+        const minute = document.createElement("input")
+        minute.setAttribute("type", "number")
+        minute.setAttribute("placeholder", "Menit")
+        minute.setAttribute("name", "minute")
+        minute.addEventListener("change", calculateTotalTime)
+
+        const second = document.createElement("input")
+        second.setAttribute("type", "number")
+        second.setAttribute("placeholder", "Detik")
+        second.setAttribute("name", "second")
+        second.addEventListener("change", calculateTotalTime)
+
+        div.appendChild(hour)
+        div.appendChild(minute)
+        div.appendChild(second)
+        timeContainer.appendChild(div)
+      })
+    })
+  </script>
+</body>
+</html>
