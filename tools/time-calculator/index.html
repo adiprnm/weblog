@@ -66,9 +66,9 @@ description: Hitung jumlah waktu yang telah berlalu dari jam-jam yang diberikan.
     document.addEventListener("DOMContentLoaded", function() {
       calculateTotalTime()
 
-      document.querySelector("input[name=hour]").addEventListener("change", calculateTotalTime)
-      document.querySelector("input[name=minute]").addEventListener("change", calculateTotalTime)
-      document.querySelector("input[name=second]").addEventListener("change", calculateTotalTime)
+      document.querySelector("input[name=hour]").addEventListener("input", calculateTotalTime)
+      document.querySelector("input[name=minute]").addEventListener("input", calculateTotalTime)
+      document.querySelector("input[name=second]").addEventListener("input", calculateTotalTime)
 
       addButton.addEventListener("click", function() {
         const div = document.createElement("div")
@@ -79,19 +79,19 @@ description: Hitung jumlah waktu yang telah berlalu dari jam-jam yang diberikan.
         hour.setAttribute("type", "number")
         hour.setAttribute("placeholder", "Jam")
         hour.setAttribute("name", "hour")
-        hour.addEventListener("change", calculateTotalTime)
+        hour.addEventListener("input", calculateTotalTime)
 
         const minute = document.createElement("input")
         minute.setAttribute("type", "number")
         minute.setAttribute("placeholder", "Menit")
         minute.setAttribute("name", "minute")
-        minute.addEventListener("change", calculateTotalTime)
+        minute.addEventListener("input", calculateTotalTime)
 
         const second = document.createElement("input")
         second.setAttribute("type", "number")
         second.setAttribute("placeholder", "Detik")
         second.setAttribute("name", "second")
-        second.addEventListener("change", calculateTotalTime)
+        second.addEventListener("input", calculateTotalTime)
 
         div.appendChild(hour)
         div.appendChild(minute)
