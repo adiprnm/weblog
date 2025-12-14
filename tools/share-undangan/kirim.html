@@ -1,0 +1,42 @@
+---
+title: Kirim Undangan
+description: Kirim undangan digital secara praktis via WhatsApp.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/share-undangan/main.css" | relative_url }}">
+  <script src="{{ "/tools/share-undangan/main.js" | relative_url }}"></script>
+</head>
+<body>
+  <main class="container mt-16">
+    <p style="font-style: italic; font-size: 14px; text-decoration: underline;" id="step"></p>
+    <p style="margin-bottom: 0.25rem;">Template pesan untuk:</p>
+    <h3 style="margin-top: 0; font-size: 1.5rem; font-weight: 600; text-decoration: underline" id="currentGuest"></h3>
+    <div id="invitationMessage" style="margin-top: 2rem; margin-bottom: 10rem; line-height: 1.5em;"></div>
+    <div class="floating">
+      <div class="container">
+        <div class="p-4">
+          <button class="success-button full-width mb-4" onclick="sendToWhatsApp()">Kirim via WhatsApp</button>
+          <button class="full-width mb-4" onclick="nextGuest()">Selanjutnya</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const message = populateMessage();
+        invitationMessage.innerText = message
+
+        setStep()
+      })
+    </script>
+  </main>
+</body>
+</html>

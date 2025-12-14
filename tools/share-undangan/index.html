@@ -1,0 +1,88 @@
+---
+title: Share Undangan
+description: Bagikan undangan digital secara praktis via WhatsApp.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/share-undangan/main.css" | relative_url }}">
+  <script src="{{ "/tools/share-undangan/main.js" | relative_url }}"></script>
+</head>
+<body>
+  <main class="container">
+    <a href="/tools" style="margin-top: 1rem; display: inline-block;">Lihat tools lainnya</a>
+      <h1 class="mt-16">{{ page.title}}</h1>
+      <p style="margin-bottom: 3rem;">{{ page.description }}</p>
+
+      <form action="/tools/share-undangan/kirim" method="get">
+        <div>
+          <label for="link">Link Undangan</label>
+          <input type="text" name="link" id="link" placeholder="https://kanyaah.com/fulanah-fulan">
+        </div>
+        <div>
+          <label for="link">Parameter Nama Tamu</label>
+          <input type="text" name="guest_key" id="guest_key" value="to", placeholder="Contoh: to, yth, dear, untuk.">
+          <small>Contoh: https://kanyaah.com/fulanah-fulan?<strong style="font-weight: 800; font-style: italic; color: red;">to</strong>=Nama+Tamu</small>
+        </div>
+        <div>
+          <label for="guests">List Nama Tamu</label>
+          <span id="guestListErrorMessage" style="color: red; font-style: normal; display: block; margin-bottom: 4px;"></span>
+          <textarea name="guests" id="guests" cols="30" rows="10" placeholder="Masukkan nama tamu. Satu nama tamu per baris."></textarea>
+          <small>Satu nama per baris</small>
+        </div>
+        <div>
+          <label for="guests">Template Pesan</label>
+          <span id="errorMessage" style="color: red; font-style: normal; display: block; margin-bottom: 4px;"></span>
+          <textarea name="message_template" id="message_template" cols="30" rows="10" placeholder="Tuliskan template pesan undangan">Assalamu'alaikum Wr. Wb
+Bismillahirahmanirrahim.
+
+Maha suci Allah yang telah menjadikan segala sesuatu lebih indah dan sempurna
+
+Kepada Yth. {{ nama_tamu }}
+
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami, Fulanah & Fulan.
+
+Informasi mengenai detail acara, lokasi, dan waktu lebih lengkap dapat diakses pada tautan terlampir :
+
+{{ link_undangan }}
+
+Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
+
+Mohon maaf perihal undangan hanya di bagikan melalui pesan ini. Terima kasih banyak atas perhatiannya.
+
+Wassalamu'alaikum Wr. Wb.
+
+Kami yang berbahagia
+Fulan & Fulanah.</textarea>
+        </div>
+        <div>
+          <button class="outline block mb-4 full-width" id="saveButton" onclick="saveAndAlert()">Simpan</button>
+          <button type="submit" id="submitButton" onclick="populateAndSend()">Kirim</button>
+        </div>
+    </form>
+  </main>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          ["saveButton", "submitButton"].forEach(button => {
+              document.getElementById(button).addEventListener("click", function (e) {
+                  e.preventDefault();
+              })
+          })
+
+          setFieldValues()
+      })
+  </script>
+</body>
+<footer class="text-center mt-32 mb-16">
+  Website by <a href="{{ site.url }}">adipurnm</a>
+  <br><br>
+  <a href="{{ site.donate_url }}" role="button" target="_blank" class="donate-button">Traktir saya jajan</a>
+</footer>
+</html>
