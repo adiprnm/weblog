@@ -5,6 +5,7 @@ permalink: /others
 reply_to_email: none
 ---
 
+- [Adi on Rails](https://adionrails.com){:target="_blank"}
 - [Alat Tempur](/alat-tempur)
 - [Buku Tamu](/buku-tamu)
 - [Kontak](/kontak)
@@ -12,5 +13,4 @@ reply_to_email: none
 - [Project](/project)
 - [Teknologia](/teknologia)
 - [Toko](https://shop.adipurnm.com)
-- [Tools](/tools)
 - [Tulisan Menarik](/tulisan-menarik)
