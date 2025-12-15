@@ -34,6 +34,6 @@ Di mode founder itu, ada dua hal yang menurut saya bisa dibuatkan tools-nya dan 
 2. Tools untuk [hitung jumlah waktu dari waktu yang diberikan](/tools/time-calculator). Tools ini berawal dari kesulitan saya menghitung jumlah waktu di sebuah platform time tracker.
 3. Tools untuk [share undangan digital lewat WhatsApp](/tools/share-undangan). Tools ini sebenarnya udah ada sejak lama, tapi saya pindahkan ke blog ini. Enaknya pakai SSG tinggal copas sama sesuaikan sedikit kode HTML dan JS-nya aja.
 
-Keduanya gratis, jadi silahkan pakai sesuka kalian.
+Ketiganya gratis, jadi silahkan pakai sesuka kalian.
 
 Saya pikir itu saja. Semoga saya bisa rutin menulis lagi ke depannya, hehe.
