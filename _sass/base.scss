@@ -171,6 +171,10 @@ code { font-family: "Cascadia Code"; }
 .text-black { color: black; }
 .text-orange { color: orange; }
 .underline { text-decoration: underline; }
+.underline--dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 .full-width { width: 100%; }
 
 .flex { display: flex; }
