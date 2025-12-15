@@ -26,12 +26,13 @@ Sebagai seorang yang cukup teknis dan bekerja di belakang layar, melakukan semua
 
 Pastinya ada rasa tidak nyaman ketika keluar dari zona tersebut. Saya pikir wajar saja, apalagi kalau udah terlalu lama di zona nyaman. Kadang kita harus terus bergerak, dan jangan berlindung di balik kata "ini bukan gue banget" ketika melakukan hal baru.
 
-## Rilis dua tools baru
+## Rilis tiga tools baru
 
 Di mode founder itu, ada dua hal yang menurut saya bisa dibuatkan tools-nya dan dibagikan secara cuma-cuma.
 
 1. Tools untuk [generate link chat WhatsApp](/tools/chat-wa-link-generator). Cocok buat pemilik usaha yang nggak mau ribet bikin link chat WhatsApp.
 2. Tools untuk [hitung jumlah waktu dari waktu yang diberikan](/tools/time-calculator). Tools ini berawal dari kesulitan saya menghitung jumlah waktu di sebuah platform time tracker.
+3. Tools untuk [share undangan digital lewat WhatsApp](/tools/share-undangan). Tools ini sebenarnya udah ada sejak lama, tapi saya pindahkan ke blog ini. Enaknya pakai SSG tinggal copas sama sesuaikan sedikit kode HTML dan JS-nya aja.
 
 Keduanya gratis, jadi silahkan pakai sesuka kalian.
 
