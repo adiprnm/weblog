@@ -13,6 +13,9 @@ description: Buat link untuk melanjutkan chat di WhatsApp dengan mudah dan aman.
   <link rel="icon" href="icon.svg">
   <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/tools/chat-wa-link-generator/main.css" | relative_url }}">
+  {% if jekyll.environment == "production" and site.analytics_enabled %}
+    <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
+  {% endif %}
 </head>
 <body>
   <main class="container">
