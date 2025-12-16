@@ -42,13 +42,13 @@ function populateAndSend() {
     const messageTemplate = message_template.value
     let missingPlaceholders = []
     let isError = false
-    if (!messageTemplate.includes("{{ nama_tamu }}")) {
+    if (!messageTemplate.includes("<nama_tamu>")) {
         isError = true
-        missingPlaceholders.push("{{ nama_tamu }}")
+        missingPlaceholders.push("<nama_tamu>")
     }
-    if (!messageTemplate.includes("{{ link_undangan }}")) {
+    if (!messageTemplate.includes("<link_undangan>")) {
         isError = true
-        missingPlaceholders.push("{{ link_undangan }}")
+        missingPlaceholders.push("<link_undangan>")
     }
     if (guests.value.trim().length == 0) {
         isError = true
@@ -76,7 +76,7 @@ function populateMessage() {
     const fullLink = `${link}?${guestKey}=${guest.replace(" ", "+")}`
 
     let message = localStorage.getItem("message_template")
-    return message.replace("{{ nama_tamu }}", guest).replace("{{ link_undangan }}", fullLink)
+    return message.replace("<nama_tamu>", guest).replace("<link_undangan>", fullLink)
 }
 
 function sendToWhatsApp() {
