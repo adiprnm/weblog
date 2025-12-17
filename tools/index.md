@@ -7,7 +7,7 @@ description: List boring tools yang bermanfaat, setidaknya bagi saya sendiri.
 List boring tools yang bermanfaat, setidaknya bagi saya sendiri.
 
 * [Chat WhatsApp Link Generator](/tools/chat-wa-link-generator){:class="underline--dotted"}: buat link untuk melanjutkan chat di WhatsApp dengan mudah dan aman.
-* [Share Undangan](/tools/share-undangan){:class="underline--dotted"}: Bagikan undangan digital via WhatsApp dengan mudah
+* [Share Undangan](/tools/share-undangan){:class="underline--dotted"}: Bagikan undangan digital via WhatsApp dengan mudah <sup class="new-item"></sup>
 * [Tanggal Merah Terdekat](/tools/tanggal-merah){:class="underline--dotted"}: Lihat tanggal merah lalu ajukan cuti
 * [Text Obfuscator](/tools/text-obfuscator){:class="underline--dotted"}: Samarkan teks mulai pada paragraf tertentu
 * [Time Calculator](/tools/time-calculator){:class="underline--dotted"}: Hitung waktu yang telah berlalu dari jam-jama yang diberikan

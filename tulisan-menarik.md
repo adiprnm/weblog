@@ -5,10 +5,9 @@ permalink: /tulisan-menarik
 description: Kumpulan tulisan yang menarik untuk dibaca.
 ---
 
-> *terakhir diperbarui tanggal 12 Juli 2025.*
->
-> Changelog:
-> - menambahkan artikel [Rewrite it in Rails](https://dirkjonker.bearblog.dev/rewrite-it-in-rails/)
+> *terakhir diperbarui tanggal 17 Desember 2025.*
+
+***
 
 ### Work
 
@@ -23,3 +22,7 @@ description: Kumpulan tulisan yang menarik untuk dibaca.
 ### Solopreneurship
 
 * [Using Coding Skills to Make Passive Income](https://www.coryzue.com/writing/solopreneur/)
+
+### Content Creation
+
+* [PERFECT? Stop (Menunggu) Sempurna. Mulai Sekarang, Sempurnakan Sambil Jalan.](https://buletin.co/bjoe/perfect-stop-menunggu-sempurna-mulai-sekarang)<sup class="new-item"></sup>

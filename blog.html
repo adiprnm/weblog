@@ -10,13 +10,14 @@ reply_to_email: none
 <div class="mt-8">
   <h1>Archives</h1>
   {% for year in posts_by_year %}
+    {% assign first_year = forloop.first %}
     <details class="mt-2" {% if forloop.first %}open{% endif %}>
       <summary>{{ year.name }} ({{ year.items | size }})</summary>
 
       <ul>
         {% for post in year.items %}
           <li>
-            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> – <a class="mt-1" href="{{ post.url }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> – <a class="mt-1" href="{{ post.url }}">{{ post.title }}{% if first_year and forloop.first %}<sup class="new-item"></sup>{% endif %}</a>
           </li>
         {% endfor %}
       </ul>

@@ -580,3 +580,9 @@ details[open] > summary::before {
 .gallery--no-bottom-gap img {
   margin-bottom: 0!important;
 }
+sup.new-item {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  background: url('/assets/images/new.gif') center center / cover;
+}
