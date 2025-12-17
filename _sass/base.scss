@@ -594,6 +594,7 @@ sup.new-item--absolute {
 }
 p:has(.donate-button), a:has(> .donate-button) {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
   gap: 8px;
@@ -602,7 +603,8 @@ p:has(.donate-button), a:has(> .donate-button) {
 .donate-button {
   width: 150px;
   height: 20px;
-  display: inline;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 .not-by-ai {
   width: 84px;
