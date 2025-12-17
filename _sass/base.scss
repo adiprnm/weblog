@@ -582,9 +582,15 @@ details[open] > summary::before {
 }
 sup.new-item {
   display: inline-block;
-  width: 30px;
-  height: 15px;
+  width: 25px;
+  height: 9px;
+  margin-left: 2px;
   background: url('/assets/images/new.gif') center center / cover;
+}
+sup.new-item--absolute {
+  position: absolute;
+  right: -12px;
+  top: -6px;
 }
 p:has(.donate-button), a:has(> .donate-button) {
   display: flex;
@@ -597,4 +603,11 @@ p:has(.donate-button), a:has(> .donate-button) {
   width: 150px;
   height: 20px;
   display: inline;
+}
+.not-by-ai {
+  width: 84px;
+  margin-bottom: 8px;
+}
+.relative {
+  position: relative;
 }
