@@ -586,3 +586,15 @@ sup.new-item {
   height: 15px;
   background: url('/assets/images/new.gif') center center / cover;
 }
+p:has(.donate-button), a:has(> .donate-button) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.donate-button {
+  width: 150px;
+  height: 20px;
+  display: inline;
+}

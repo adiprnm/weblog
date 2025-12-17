@@ -52,10 +52,19 @@
         {{ content }}
 
         {% assign reply_to_email = page.reply_to_email | default: true %}
-        {% if reply_to_email != "none" %}
-          <blockquote>
-            Balas melalui <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">email</a>.
-          </blockquote>
+
+        <hr>
+
+        {% if reply_to_email != "none" or site.donate_url %}
+          {% if site.donate_url %}
+            <p>Suka dengan karya/tulisan saya? <a href="{{ site.donate_url }}"><img src="/assets/images/donate.gif" class="donate-button"></a></p>
+          {% endif %}
+
+          {% if reply_to_email != "none" %}
+            <blockquote>
+              Balas melalui <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">email</a>.
+            </blockquote>
+          {% endif %}
         {% endif %}
       </article>
 
