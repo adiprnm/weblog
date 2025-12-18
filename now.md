@@ -5,21 +5,22 @@ permalink: /now
 description: List of the things I am doing recently. I prefer put this on my blog rather than social media.
 ---
 
-Halaman ini terinspirasi oleh halaman [nownownow](https://nownownow.com/about){:target="blank"}-nya Derek Shivers.
+> terakhir diperbarui pada tanggal 18 Desember 2025
 
-## Liburan ke Yogyakarta
+Halaman ini terinspirasi oleh halaman [nownownow](https://nownownow.com/about){:target="_blank"}-nya Derek Shivers.
 
-Saya lagi liburan ke Yogyakarta. Rencananya kami akan mengunjungi beberapa destinasi wisata, mulai dari kuliner hingga wahana ramah anak.
+## Pulang ke Ciamis
 
-Cuaca lagi kurang bersahabat. Udah beberapa hari ini mendung. Siang sampai malam hujan terus. Tapi mau bagaimana pun, liburan harus tetap jadi, hehe.
+Setelah kurang lebih 7 bulan, akhirnya saya baru bisa pulang ke Ciamis. Rencana ini baru terealisasi sekarang, setelah bulan Agustus yang lalu harus batal karena anak saya sakit dan harus dirawat, dan bulan-bulan selanjutnya ada aja kendala yang membuat saya harus menunda lagi dan lagi.
 
-![Pink Slide di Ibarbo](/assets/images/2025/caa9958a-1571-435c-80db-672a8f195bb4.webp)
+Saya akan stay di Ciamis selama 4 hari. Menghadiri acara pernikahan sobat kecil saya, serta menikmati suasana kota kelahiran saya yang sepertinya nggak terlalu banyak berubah selama 7 bulan belakangan ini.
+
+## Membuka jasa pembuatan website
+
+Saya mengubah fokus [Bikin Aja Dulu](https://bikinajadulu.web.id){: target="_blank" }, dari yang semula hanya untuk memotivasi programmer untuk build something, menjadi jasa pembuatan website. Alhamdulillah sudah dapat beberapa leads.
 
 ## Kerja *full-time*
 Saya bekerja di salah satu perusahaan SaaS di Indonesia secara *remote*.
 
 ## Mengerjakan *project* sampingan
 Di kala senggang, saya membuat beberapa aplikasi web. Beberapa diantaranya sudah dirilis: [Kanyaah](https://kanyaah) dan [Gawéeun](https://gaweeun.my.id).
-
-## Membaca dan menulis blog
-Belakangan ini saya banyak membaca blog. Kebanyakan dari blog tersebut dipublikasikan di Bear Blog.
