@@ -4,7 +4,9 @@
   url: /blog
 - name: Now
   url: /now
-- name: Boring Tools
+- name: Tools
   url: /tools
+- name: Shop
+  url: https://shop.adipurnm.com
 - name: Lainnya
   url: /others
