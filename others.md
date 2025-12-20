@@ -12,5 +12,4 @@ reply_to_email: none
 - [Newsletter](/newsletter)
 - [Project](/project)
 - [Teknologia](/teknologia)
-- [Toko](https://shop.adipurnm.com)
 - [Tulisan Menarik](/tulisan-menarik)
