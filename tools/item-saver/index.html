@@ -1,0 +1,314 @@
+---
+title: Item Saver
+description: Simpan link, nomor rekening, nomor tagihan, atau apapun.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/item-saver/main.css" | relative_url }}">
+  {% if jekyll.environment == "production" and site.analytics_enabled %}
+    <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
+  {% endif %}
+
+  <script type="module">
+    import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
+    window.Stimulus = Application.start()
+
+    Stimulus.register("contents", class extends Controller {
+      static targets = [ "container", "nameField", "contentField", "nameError", "contentError", "formAction", "form", "newButton" ];
+
+      connect() {
+        this.render()
+      }
+
+      render(contents = null) {
+        this.newButtonTarget.style.display = "block"
+        this.formActionTarget.setAttribute("data-action", "contents#create")
+        this.nameFieldTarget.value = ''
+        this.nameErrorTarget.textContent = ''
+        this.contentFieldTarget.value = ''
+        this.contentErrorTarget.textContent = ''
+        this.containerTarget.innerHTML = '';
+
+        contents = contents || this.getContents()
+
+        for (let content of contents) {
+          this.containerTarget.appendChild(this.getCardComponent(content))
+        }
+
+        let emptyState = document.createElement("p")
+        emptyState.textContent = "Tidak ada rekening."
+        emptyState.classList.add("empty-state")
+
+        this.containerTarget.appendChild(emptyState)
+      }
+
+      getContents() {
+        return JSON.parse(localStorage.getItem("contents")) || []
+      }
+
+      lastId() {
+        return parseInt(localStorage.getItem("lastId") || "0")
+      }
+
+      getCardComponent(content) {
+        let article = document.createElement("article")
+
+        let heading = document.createElement("p")
+        heading.textContent = content.name
+        heading.title = content.name
+        heading.classList.add("font-bold")
+        heading.classList.add("no-margin")
+        heading.classList.add("truncated")
+
+        let paragraph = document.createElement("p")
+        paragraph.textContent = content.content
+        paragraph.title = content.content
+        paragraph.classList.add("truncated")
+
+        let copyButton = document.createElement("button")
+        copyButton.setAttribute("data-action", "contents#copy")
+        copyButton.textContent = "Salin"
+        copyButton.dataset.content = content.content
+
+        let editButton = document.createElement("button")
+        editButton.setAttribute("data-action", "contents#edit")
+        editButton.classList.add("outline")
+        editButton.classList.add("no-border")
+        editButton.classList.add("no-padding")
+        editButton.dataset.id = content.id
+        editButton.textContent = "Ubah"
+
+        let breakTag = document.createElement("br")
+
+        let deleteButton = document.createElement("button")
+        deleteButton.setAttribute("data-action", "contents#delete")
+        deleteButton.classList.add("outline")
+        deleteButton.classList.add("no-border")
+        deleteButton.classList.add("no-padding")
+        deleteButton.classList.add("text-danger")
+        deleteButton.dataset.id = content.id
+        deleteButton.textContent = "Hapus"
+
+        let innerWrapper1 = document.createElement("div")
+        innerWrapper1.classList.add("first-wrapper")
+        innerWrapper1.appendChild(heading)
+        innerWrapper1.appendChild(paragraph)
+        innerWrapper1.appendChild(copyButton)
+
+        let innerWrapper2 = document.createElement("div")
+        innerWrapper2.classList.add("action-wrapper")
+        innerWrapper2.appendChild(editButton)
+        innerWrapper2.appendChild(deleteButton)
+
+        article.appendChild(innerWrapper1)
+        article.appendChild(innerWrapper2)
+        article.classList.add("wrapper")
+
+        return article
+      }
+
+      new() {
+        this.formTarget.showModal()
+        this.nameErrorTarget.textContent = ''
+        this.contentErrorTarget.textContent = ''
+        this.nameFieldTarget.autofocus = true
+        this.formActionTarget.setAttribute("data-action", "contents#create")
+      }
+
+      create() {
+        if (!this.validate()) return;
+
+        let id = this.lastId() + 1
+        let contents = [
+          ...this.getContents(),
+          {
+            id: id,
+            name: this.nameFieldTarget.value,
+            content: this.contentFieldTarget.value,
+          }
+        ]
+        localStorage.setItem("lastId", id.toString())
+        localStorage.setItem("contents", JSON.stringify(contents))
+        this.formTarget.close()
+
+        this.render()
+      }
+
+      edit({ target }) {
+        this.nameErrorTarget.textContent = ''
+        this.contentErrorTarget.textContent = ''
+
+        let id = parseInt(target.dataset.id)
+        let contents = this.getContents()
+
+        let content = contents.find(acc => acc.id == id)
+        this.nameFieldTarget.value = content.name
+        this.contentFieldTarget.value = content.content
+
+        this.formActionTarget.setAttribute("data-action", "contents#update")
+        this.formActionTarget.dataset.id = id
+        this.formTarget.showModal()
+      }
+
+      update({ target }) {
+        if (!this.validate()) return;
+
+        let id = parseInt(target.dataset.id)
+        let contents = this.getContents()
+
+        let content = contents.find(c => c.id == id)
+        let contentIndex = contents.indexOf(content)
+
+        content.name = this.nameFieldTarget.value
+        content.content = this.contentFieldTarget.value
+        contents[contentIndex] = content
+
+        localStorage.setItem("contents", JSON.stringify(contents))
+        this.formTarget.close()
+        this.render()
+      }
+
+      delete({ target }) {
+        let confirmed = confirm("Apakah kamu yakin ingin menghapus data ini?")
+        if (!confirmed) return;
+
+        let id = parseInt(target.dataset.id)
+        let contents = this.getContents().filter(acc => acc.id != id)
+        localStorage.setItem("contents", JSON.stringify(contents))
+
+        this.render()
+      }
+
+      copy({ target }) {
+        navigator.clipboard.writeText(target.dataset.content)
+        alert("Berhasil disalin!")
+      }
+
+      search({ target }) {
+        let contents = this.getContents().filter(acc => acc.name.toLowerCase().includes(target.value.toLowerCase()))
+
+        this.render(contents)
+      }
+
+      validate() {
+        let valid = true;
+
+        if (this.nameFieldTarget.value == "") {
+          this.nameErrorTarget.textContent = "Nama tidak boleh kosong"
+          valid = false
+        }
+
+        if (this.contentFieldTarget.value == "") {
+          this.contentErrorTarget.textContent = "Nomor tidak boleh kosong"
+          valid = false
+        }
+
+        return valid
+      }
+
+      closeModal() {
+        this.formTarget.close()
+      }
+
+      export() {
+        const anchor = document.createElement("a");
+        const contents = this.getContents()
+        const file = new Blob([JSON.stringify(contents)], { type: "application/json" });
+        anchor.href = URL.createObjectURL(file);
+        anchor.download = "items.json";
+        anchor.click();
+      }
+
+      import({ target }) {
+        const file = target.files[0]
+
+        if (file && file.type === "application/json") {
+          const reader = new FileReader();
+
+          reader.onload = (e) => {
+            const fileContent = e.target.result;
+            try {
+              const contents = JSON.parse(fileContent);
+              const allContents = [
+                ...this.getContents(),
+                ...contents,
+              ]
+              const ids = allContents.map(item => item.id)
+              const lastId = Math.max(...ids)
+
+              localStorage.setItem("lastId", lastId)
+              localStorage.setItem("contents", JSON.stringify(allContents))
+              alert("Data imported successfully!")
+              this.render(allContents)
+            } catch (error) {
+              console.error("Error parsing JSON:", error);
+              alert("Error: Could not parse JSON file.");
+            }
+          };
+
+          reader.readAsText(file);
+        } else {
+            document.getElementById('output').textContent = "Please select a valid JSON file.";
+        }
+      }
+    })
+  </script>
+</head>
+<body>
+  <main id="app" class="container" data-controller="contents">
+    <a href="/tools" style="margin-top: 1rem; display: inline-block;">Lihat tools lainnya</a>
+    <h1 class="mt-8">{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+    <button class="full-width" data-contents-target="newButton" data-action="contents#new">+Tambah Baru</button>
+    <p class="mt-4 text-center">atau</p>
+    <div class="grid-wrapper grid-wrapper--two-columns">
+      <label for="import">
+        <input type="file" data-action="contents#import" hidden id="import">
+        <span class="outline block full-width" role="button">Import JSON</span>
+      </label>
+      <button class="outline no-border" data-action="contents#export">Export JSON</button>
+    </div>
+
+    <dialog class="form" id="form" data-contents-target="form">
+      <div class="container container-md">
+        <article>
+          <div>
+            <label for="name">Nama</label>
+            <input type="text" data-contents-target="nameField">
+            <small class="text-danger" data-contents-target="nameError"></small>
+          </div>
+          <div>
+            <label for="name">Konten</label>
+            <textarea data-contents-target="contentField" rows="6" class="block"></textarea>
+            <small class="text-danger" data-contents-target="contentError"></small>
+          </div>
+
+          <div class="mt-8 grid-wrapper">
+            <button class="full-width block outline" data-action="contents#closeModal">Batal</button>
+            <button class="full-width block" data-contents-target="formAction" data-action="contents#create">Simpan</button>
+          </div>
+        </article>
+      </div>
+    </dialog>
+
+    <input type="text" class="mt-8" data-action="contents#search" placeholder="Cari berdasarkan nama..." />
+
+    <div data-contents-target="container" class="grid-wrapper"></div>
+
+    <div class="mt-8">
+      <strong>NOTE:</strong>
+      <p>Semua data disimpan di local storage. Tidak ada data yang dikirim ke server manapun.</p>
+    </div>
+
+    {% include tools-footer.html %}
+  </main>
+</body>
+</html>
