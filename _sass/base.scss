@@ -601,8 +601,8 @@ p:has(.donate-button), a:has(> .donate-button) {
   flex-wrap: wrap;
 }
 .donate-button {
-  width: 150px;
-  height: 20px;
+  width: calc(150px * 1.25);
+  height: calc(20px * 1.25);
   display: inline-block;
   margin-bottom: 1rem;
 }
