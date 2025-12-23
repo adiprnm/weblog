@@ -5,6 +5,8 @@ permalink: /buku-tamu
 reply_to_email: none
 ---
 
+> **INFO:**<br>
+> Maaf ya, sepertinya buku tamu [sedang mengalami gangguan](https://meadow.cafe/vomits/0008-azure-disabled-my-account-trip-to-the-cabin/){: target="_blank" }. Semoga bisa sesegera mungkin kembali normal.
 
 <script async src="https://guestbooks.meadow.cafe/resources/js/embed_script/724/script.js"></script>
 <div id="guestbooks___guestbook-form-container">
