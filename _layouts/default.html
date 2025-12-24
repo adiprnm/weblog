@@ -40,7 +40,13 @@
       </heading>
 
       <article class="mt-8">
-        {% if page.date %}
+        {% if page.chapter %}
+          <p><small><a class="underline--dotted" href="/melek-digital">Kembali ke halaman utama</a></small></p>
+
+          <small class="text-gray inline-block mb-2">
+            Chapter {{ page.chapter }}
+          </small>
+        {% elsif page.date %}
           <small class="text-gray inline-block mb-2">
             {{ page.date | date: "%B %-d, %Y" }}
           </small>

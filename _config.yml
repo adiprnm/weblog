@@ -26,7 +26,9 @@ defaults:
       path: ""
     values:
       image: /assets/images/adi-og.jpg
-
+collections:
+  digital_awarenesses:
+    output: true
 plugins:
 - jekyll-feed
 - jekyll-seo-tag

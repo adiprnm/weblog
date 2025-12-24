@@ -1,0 +1,23 @@
+---
+layout: default
+title: Melek Digital
+reply_to_email: none
+---
+
+<p>Selamat datang di halaman Melek Digital! Halaman ini saya buat sebagai sarana edukasi bagi pembaca supaya tetap aman di era digital sekarang ini.</p>
+
+<p>Harus diakui, modus penipuan semakin ke sini semakin berkembang dan menakutkan. Sudah cukup banyak yang menjadi korban karena modus-modus penipuan ini. Lengah sedikit saja, bisa-bisa data pribadi kita disalahgunakan. Entah itu didaftarkan ke pinjol ilegal, atau dijual lagi ke pihak yang merugikan.</p>
+
+<p>Halaman ini akan secara berkala saya perbarui. Silahkan dibagikan ke keluarga, orang tua, atau kerabat ya, supaya kita semakin waspada akan ancaman di era digital ini.</p>
+
+<p>Kalau ada yang mau ditambahkan, silahkan <a href="/kontak">hubungi saya</a></p>
+
+<hr>
+
+<h2>Daftar Isi</h2>
+
+<ol>
+  {% for post in site.digital_awarenesses %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ol>

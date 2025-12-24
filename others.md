@@ -9,6 +9,7 @@ reply_to_email: none
 - [Alat Tempur](/alat-tempur)
 - [Buku Tamu](/buku-tamu)
 - [Kontak](/kontak)
+- [Melek Digital](/melek-digital)
 - [Newsletter](/newsletter)
 - [Project](/project)
 - [Teknologia](/teknologia)
