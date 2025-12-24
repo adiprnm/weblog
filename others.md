@@ -12,5 +12,6 @@ reply_to_email: none
 - [Melek Digital](/melek-digital)
 - [Newsletter](/newsletter)
 - [Project](/project)
+- [Status](/status)
 - [Teknologia](/teknologia)
 - [Tulisan Menarik](/tulisan-menarik)
