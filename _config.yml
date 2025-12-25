@@ -29,6 +29,7 @@ defaults:
 collections:
   digital_awarenesses:
     output: true
+guestbook_provider: "self_host"
 plugins:
 - jekyll-feed
 - jekyll-seo-tag

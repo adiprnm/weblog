@@ -459,9 +459,10 @@ input[type=submit] {
   background-color: $primaryColor;
   color: white;
   width: 100px;
-  padding: 0.25rem;
+  padding: 0.5rem 0.25rem;
   border: none;
   margin-bottom: 1rem;
+  font-size: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -612,4 +613,7 @@ p:has(.donate-button), a:has(> .donate-button) {
 }
 .relative {
   position: relative;
+}
+form label {
+  font-size: 12px;
 }
