@@ -1,14 +1,15 @@
 {
   "name": "Item Saver",
-  "short_name": "ItemSaver",
+  "short_name": "Item Saver",
   "start_url": "/tools/item-saver/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "/tools/item-saver/icon.svg",
-      "type": "image/svg+xml"
+      "src": "/tools/item-saver/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ]
 }
