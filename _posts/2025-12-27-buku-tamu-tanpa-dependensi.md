@@ -33,10 +33,10 @@ Langkah ini saya ambil salah satunya adalah untuk mengurangi dependensi terhadap
 
 Kalau layanan guestbook Meadow sudah kembali pulih, saya berencana untuk memindahkan semua entri buku tamu secara manual ke blog ini.
 
-Oiya, kalau kamu juga tertarik, kamu bisa pasang kode berikut di website kamu:
+Oiya, kalau kamu juga tertarik, kamu bisa pasang kode berikut di website kamu. Cukup ganti email `your-email@example.com` dengan email yang ingin kamu pakai untuk menerima entri buku tamu.
 
 ```html
-<form id="guestbook-form" action="mailto:{{ site.email }}" method="get">
+<form id="guestbook-form" action="mailto:your-email@example.com" method="get">
     <div class="mb-2">
         <label for="name">Nama</label>
         <input type="text" id="name" required placeholder="Nama kamu...">
