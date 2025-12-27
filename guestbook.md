@@ -39,7 +39,7 @@ reply_to_email: none
 {% else %}
 
 > **Note:**<br>
-> Form berikut akan mengarahkanmu ke email client. Penambahan entri buku tamu akan saya tambahkan secara manual.
+> Form berikut akan mengarahkanmu ke email client seperti GMail. Penambahan entri buku tamu akan saya tambahkan secara manual.
 
 <form id="guestbook-form" action="mailto:{{ site.email }}" method="get">
     <div class="mb-2">
