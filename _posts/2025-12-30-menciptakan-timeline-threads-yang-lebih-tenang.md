@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Menciptakan timelune Threads yang lebih tenang
+title: Menciptakan timeline Threads yang lebih tenang
 tags: Opini
 ---
 
