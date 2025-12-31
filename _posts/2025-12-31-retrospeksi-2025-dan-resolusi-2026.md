@@ -17,7 +17,7 @@ Mari kita lihat resolusi apa saja yang saya buat tepat satu tahun yang lalu [di 
 
 Ya. Saya membuat beberapa konten video di akun TikTok dan Instagram. Saya publikasikan di akun pribadi dan akun Kanyaah. Meskipun hanya terhitung jari, sih, hehe. Tapi, sedikit lebih baik daripada tidak sama sekali.
 
-**Apa tantangannya dan bagaimmana solusinya?**
+**Apa tantangannya dan bagaimana solusinya?**
 
 Awal-awal saya cukup kikuk ngobrol depan kamera. Semacam kurang percaya diri dan bingung mau ngomong apa aja. Tapi setelah bikin 2 sampai 3 konten, saya mulai cukup terbiasa, meskipun kadang ngobrolnya masih terbata-bata.
 
