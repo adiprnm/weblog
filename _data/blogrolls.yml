@@ -1,0 +1,20 @@
+- name: BanditHijo
+  image: /assets/images/blogroll/bandithijo.webp
+  website: https://bandithijo.dev
+  description: Bahas soal tech tips dan Linux yang akan bikin insight kamu nambah.
+- name: David Heinemeier Hansson
+  image: /assets/images/blogroll/dhh.jpeg
+  website: https://bandithijo.dev
+  description: Selalu menarik menyimak opini-opini sang kreator Rails ini. Filosofi-filosofinya seputar web development membuat saya bisa di titik ini sekarang.
+- name: Kotaroisme
+  image: /assets/images/blogroll/kotaroisme.png
+  website: https://kotarois.me
+  description: Programming, berkebun, nukang, jualan, dan ngopi. Software engineer ini lain dari software engineer pada umumnya! Baru-baru ini websitenya nambah fitur blog. Produk-produk digitalnya juga sangat recommended, apalagi worksheet anak bertema engineering.
+- name: Tales of a Gamer Dad
+  image: /assets/images/blogroll/mas-didik.jpg
+  website: https://didik.id
+  description: Bahas soal tech tips, gaming, dan hal non teknis. Ownernya juga sering live streaming lho <a href="https://youtube.com/@atasgudang" target="_blank">di Youtube</a>.
+- name: Yoga Sukma
+  website: https://yogasukma.web.id
+  description: Bahas macam-macam, nggak hanya satu niche. Cukup sering bahas tech. Kadang bahas fotografi dan hal lainnya juga.
+
