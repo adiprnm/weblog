@@ -6,6 +6,10 @@
   image: /assets/images/blogroll/dhh.jpeg
   website: https://bandithijo.dev
   description: Selalu menarik menyimak opini-opini sang kreator Rails ini. Filosofi-filosofinya seputar web development membuat saya bisa di titik ini sekarang.
+- name: Drafter Furniture
+  image: /assets/images/blogroll/drafterfurniture.png
+  website: https://drafterfurniture.com
+  description: Bahas seputar dunia drafter furniture, dimulai dari definisi drafter furniture sampai apa aja yang harus dikuasai untuk menjadi seorang drafter furniture.
 - name: Kotaroisme
   image: /assets/images/blogroll/kotaroisme.png
   website: https://kotarois.me
