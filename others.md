@@ -5,7 +5,7 @@ permalink: /others
 reply_to_email: none
 ---
 
-- [Adi on Rails](https://adionrails.com){:target="_blank"}
+- [Adi on Rails](/adionrails)
 - [Alat Tempur](/alat-tempur)
 - [Blogroll](/blogroll)
 - [Buku Tamu](/buku-tamu)

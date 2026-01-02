@@ -1,0 +1,16 @@
+---
+layout: default
+title: Adi on Rails
+permalink: /adionrails
+---
+
+<p>Seri ini berisi tips-tips ketika mengembangkan aplikasi menggunakan Ruby on Rails. Untuk tutorial dasar Ruby on Rails, saya sarankan ikuti <a href="https://rubyonrails.org/docs/tutorials">tutorial di website Ruby on Rails</a>-nya saja, karena sudah cukup lengkap dan mudah dipahami.</p>
+
+<ul>
+  {% assign records = site.adionrails | reverse %}
+  {% for record in records %}
+    <li>
+      <span class="post-date">{{ record.date | date: "%b %d, %Y" }}</span> – <a class="mt-1" href="{{ record.url }}">{{ record.title }}{% if forloop.first %}<sup class="new-item"></sup>{% endif %}</a>
+    </li>
+  {% endfor %}
+</ul>

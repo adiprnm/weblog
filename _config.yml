@@ -27,7 +27,9 @@ defaults:
     values:
       image: /assets/images/adi-og.jpg
 collections:
-  digital_awarenesses:
+  melek-digital:
+    output: true
+  adionrails:
     output: true
 guestbook_provider: "self_host"
 plugins:

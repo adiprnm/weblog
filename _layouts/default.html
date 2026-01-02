@@ -40,21 +40,29 @@
       </heading>
 
       <article class="mt-8">
-        {% if page.chapter %}
-          <p><small><a class="underline--dotted" href="/melek-digital">Kembali ke halaman utama</a></small></p>
+        <header>
+          {% if page.collection and page.collection != "posts" %}
+            <p><small><a class="underline--dotted" href="/{{ page.collection }}">Kembali ke halaman utama</a></small></p>
+          {% endif %}
 
-          <small class="text-gray inline-block mb-2">
-            Chapter {{ page.chapter }}
-          </small>
-        {% elsif page.date %}
-          <small class="text-gray inline-block mb-2">
-            {{ page.date | date: "%B %-d, %Y" }}
-          </small>
-        {% endif %}
+          {% if page.image and page.show_image %}
+            <img src="{{ page.image }}" class="mb-4" alt="{{ page.title }}">
+          {% endif %}
 
-        {% unless links contains page.url %}
-          <h1 class="mt-0 page-title">{{ page.title }}</h1>
-        {% endunless %}
+          {% if page.chapter %}
+            <small class="text-gray inline-block mb-2">
+              Chapter {{ page.chapter }}
+            </small>
+          {% elsif page.date %}
+            <small class="text-gray inline-block mb-2">
+              {{ page.date | date: "%B %-d, %Y" }}
+            </small>
+          {% endif %}
+
+          {% unless links contains page.url %}
+            <h1 class="mt-0 page-title">{{ page.title }}</h1>
+          {% endunless %}
+        </header>
 
         {% if page.toc %}
           <details>
