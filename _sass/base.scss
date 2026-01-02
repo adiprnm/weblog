@@ -639,3 +639,42 @@ p:has(.donate-button), a:has(> .donate-button) {
 form label {
   font-size: 12px;
 }
+
+.tree {
+  --border-color: #cccccc;
+  @media (prefers-color-scheme: dark) {
+    --border-color: #555555;
+  }
+
+  padding-left: 2px;
+  margin-top: 8px;
+}
+
+.tree ul {
+  padding-left: 22px;
+}
+
+.tree li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tree ul {
+  border-left: 2px solid var(--border-color);
+}
+
+.tree li::before {
+  content: "─";
+  border-left: 2px solid var(--border-color);
+  color: var(--border-color);
+}
+
+.tree li:last-child {
+  align-items: start;
+}
+
+.tree li:last-child::before {
+  height: 12.8px;
+}
