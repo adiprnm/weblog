@@ -53,7 +53,7 @@
             <small class="text-gray inline-block mb-2">
               Chapter {{ page.chapter }}
             </small>
-          {% elsif page.date %}
+          {% elsif page.date and page.collection != "products" %}
             <small class="text-gray inline-block mb-2">
               {{ page.date | date: "%B %-d, %Y" }}
             </small>
@@ -83,10 +83,18 @@
             </blockquote>
           {% endif %}
 
-          {% if site.donate_url %}
+          {% if site.donate_url and page.collection != "products" %}
             <hr>
             <p class="text-center">Suka dengan karya/tulisan saya?</p>
             <a href="{{ site.donate_url }}"><img src="/assets/images/donate.gif" class="donate-button"></a>
+          {% endif %}
+
+          {% if page.collection == "products" %}
+            <div class="fixed-on-mobile-only">
+              <div>
+                <a role="button" target="_blank" class="mt-4" href="mailto:{{ site.email }}?subject=Pemesanan {{ page.title }}&body=Halo+min,+saya+mau+pesan+{{ page.title }}.+Apakah+masih+tersedia?">Pesan via Email</a>
+              </div>
+            </div>
           {% endif %}
         {% endif %}
       </article>

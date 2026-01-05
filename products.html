@@ -1,0 +1,47 @@
+---
+layout: default
+title: Etalase Produk
+reply_to_email: none
+---
+
+<h2 class="mb-8">Produk Digital</h2>
+<div class="grid--two-columns-on-tablet-and-up">
+  {% for product in site.data.digital_products %}
+  <article class="card">
+    <header>
+      <img src="{{ product.image }}" alt="{{ product.name }}">
+      {% if product.sale_price %}
+      <small><del datetime="2026-01-05T22:34:01 +0700">{{ product.price }}</del> {{ product.sale_price }}</small>
+      {% else %}
+      <small>{{ product.price }}</small>
+      {% endif %}
+
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.short_description}}</p>
+      <a role="button" href="{{ product.url }}" target="_blank">Beli {{ product.type }}</a>
+    </header>
+  </article>
+  {% endfor %}
+</div>
+
+<hr class="mt-16 mb-16">
+
+<h2 class="mb-8">Produk Fisik</h2>
+<div class="grid--two-columns-on-tablet-and-up">
+  {% for product in site.products %}
+  <article class="card">
+    <header>
+      <img src="{{ product.image }}" alt="{{ product.name }}">
+      {% if product.sale_price %}
+      <small><del datetime="2026-01-05T22:34:01 +0700">{{ product.price }}</del> {{ product.sale_price }}</small>
+      {% else %}
+      <small>{{ product.price }}</small>
+      {% endif %}
+
+      <h3>{{ product.title }}</h3>
+      <p>{{ product.description}}</p>
+      <a role="button" href="{{ product.url }}">Lihat lebih detail</a>
+    </header>
+  </article>
+  {% endfor %}
+</div>

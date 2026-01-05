@@ -1,0 +1,13 @@
+- name: The Programmer's Mindset
+  url: "https://shop.adipurnm.com/products/the-programmers-mindset"
+  image: /assets/images/products/the-programmers-mindset.webp
+  short_description: Mindset yang diperlukan untuk menjadi seorang programmer.
+  type: e-book
+  price: Rp54.900
+  sale_price: Rp34.900
+- name: Self-hosting dengan Dokku
+  url: "https://shop.adipurnm.com/products/self-hosting-dengan-dokku"
+  image: /assets/images/products/self-hosting-dengan-dokku.webp
+  short_description: Langkah praktis untuk deploy aplikasi dengan mudah di VPS kamu.
+  type: e-book
+  price: Gratis

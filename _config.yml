@@ -31,6 +31,8 @@ collections:
     output: true
   adionrails:
     output: true
+  products:
+    output: true
 guestbook_provider: "self_host"
 plugins:
 - jekyll-feed

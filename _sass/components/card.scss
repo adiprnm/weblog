@@ -1,0 +1,34 @@
+.card {
+  --sale-price-color: #aaaaaa;
+  --price-color: rgb(50, 205, 50);
+
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  small {
+    color: var(--price-color);
+  }
+
+  del {
+    color: var(--sale-price-color);
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    --sale-price-color: #666666;
+  }
+}
