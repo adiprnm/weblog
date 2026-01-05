@@ -1,17 +1,15 @@
 ---
 layout: default
 title: Itinerary liburan ke Yogyakarta edisi 2025
-tags: Liburan
+tags: Liburan Itinerary
 ---
 
 Mumpung masih di kereta, saya ingin share itinerary selama liburan di Yogyakarta.
 
-## Total waktu liburan
+**Total waktu liburan:**<br>
 4 hari 3 malam.
 
-## Rincian:
-
-### Day 1
+**Day 1:**
 - Berangkat dari stasiun Purwokerto.
 - Sampai stasiun Yogyakarta jam setengah 3 sore.
 - Menuju penginapan. Kami menginap di Wanitatama.
@@ -19,7 +17,7 @@ Mumpung masih di kereta, saya ingin share itinerary selama liburan di Yogyakarta
 - Menikmati malam di Heha Sky View. Walaupun kurang menikmati view-nya karena hujan.
 - Kembali ke penginapan untuk istirahat
 
-### Day 2
+**Day 2:**
 - Sarapan di Gudeg Sagan
 - Menikmati beberapa wahana di Ibarbo
 - Makan siang di warung sop dan sate Pak Bayu. Sate bakarnya enak banget!
@@ -28,20 +26,20 @@ Mumpung masih di kereta, saya ingin share itinerary selama liburan di Yogyakarta
 - Beli oleh-oleh di Jawara Satoe
 - Kembali ke penginapan
 
-### Day 3
+**Day 3:**
 - Sarapan di nasi lemak Jasa Ayah
 - Lihat hewan-hewan di Gembira Loka
 - Makan siang di Bakmi Jogokariyan
 - Mengunjungi Museum Dirgantara
 - Menghabiskan sisa malam di Alun-alun Kidul
 
-### Day 4
+**Day 4:**
 - Berangkat dari Stasiun Lempuyangan.
 - Turun di Stasiun Sidareja.
 - Sewa travel lagi untuk sampai ke rumah.
 - Liburan selesai.
 
-### Budget Spent
+**Budget Spent**<br>
 ~3 juta
 
 Ada dua destinasi yang tidak sesuai dengan rencana awal.
