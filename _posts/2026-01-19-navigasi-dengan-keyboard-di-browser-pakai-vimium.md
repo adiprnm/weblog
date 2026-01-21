@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigasi di browser tanpa mouse/touchpad dengan Vimium
+title: Navigasi browser tanpa mouse/touchpad dengan Vimium
 tags: Tech
 ---
 
