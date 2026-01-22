@@ -3,6 +3,12 @@ $bodyColor: #000000;
 $primaryColor: #0172ad;
 $primaryColorDark: #7A7E8A;
 
+@font-face {
+  font-family: "Cascadia Code";
+  src: url('/assets/fonts/CascadiaCode-Regular.ttf');
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
