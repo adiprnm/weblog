@@ -73,7 +73,7 @@ function populateMessage() {
     const guestKey = localStorage.getItem("guest_key")
     const guest = guests[currentIndex]
 
-    const fullLink = `${link}?${guestKey}=${guest.replace(" ", "+")}`
+    const fullLink = `${link}?${guestKey}=${guest.replaceAll(" ", "+")}`
 
     let message = localStorage.getItem("message_template")
     return message.replace("<nama_tamu>", guest).replace("<link_undangan>", fullLink)
