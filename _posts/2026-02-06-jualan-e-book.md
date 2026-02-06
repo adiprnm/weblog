@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jualan e-book
+tags: SideHustle E-book
 ---
 
 Jadi, saya baru aja launching e-book baru, yaitu [Rahasia Mulai Bisnis Pembuatan Website Tanpa Skill Desain](https://shop.adipurnm.com/product/rahasia-mulai-bisnis-pembuatan-website-tanpa-skill-desain/){: target="_blank" }.
