@@ -1,0 +1,130 @@
+---
+title: Random Password Generator
+description: Generate random password, dan simpan di password manager kamu.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="{{ "/assets/css/pico.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/tools/random-password-generator/main.css" | relative_url }}">
+  {% if jekyll.environment == "production" and site.analytics_enabled %}
+    <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
+  {% endif %}
+</head>
+<body>
+  <main class="container">
+    <a href="/tools" style="margin-top: 1rem; display: inline-block;">Lihat tools lainnya</a>
+    <h1 class="mt-16">{{ page.title }}</h1>
+
+    <div class="controls mt-16">
+      <label>
+        Panjang password:
+        <input type="number" id="length" min="4" max="64" value="32">
+      </label>
+
+      <label>
+        <input type="checkbox" id="includeUppercase" checked>
+        Huruf besar (A-Z)
+      </label>
+
+      <label>
+        <input type="checkbox" id="includeLowercase" checked>
+        Huruf kecil (a-z)
+      </label>
+
+      <label>
+        <input type="checkbox" id="includeNumbers" checked>
+        Angka (0-9)
+      </label>
+
+      <label>
+        <input type="checkbox" id="includeSymbols" checked>
+        Simbol (!@#$%^&*)
+      </label>
+
+      <button id="generateButton">Generate Password</button>
+    </div>
+
+    <div id="resultSection">
+      <h2 class="mt-16">Hasil</h2>
+      <pre id="result"></pre>
+      <button id="copyTextButton">Salin</button>
+    </div>
+
+    {% include tools-footer.html %}
+  </main>
+
+  <script>
+    const UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
+    const NUMBERS = "0123456789";
+    const SYMBOLS = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+
+    function generateRandomPassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols) {
+      let chars = "";
+      let password = "";
+
+      if (includeUppercase) chars += UPPERCASE;
+      if (includeLowercase) chars += LOWERCASE;
+      if (includeNumbers) chars += NUMBERS;
+      if (includeSymbols) chars += SYMBOLS;
+
+      if (chars === "") {
+        return "Pilih setidaknya satu tipe karakter";
+      }
+
+      const array = new Uint32Array(length);
+      crypto.getRandomValues(array);
+
+      for (let i = 0; i < length; i++) {
+        password += chars[array[i] % chars.length];
+      }
+
+      return password;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const lengthInput = document.getElementById("length");
+      const includeUppercaseInput = document.getElementById("includeUppercase");
+      const includeLowercaseInput = document.getElementById("includeLowercase");
+      const includeNumbersInput = document.getElementById("includeNumbers");
+      const includeSymbolsInput = document.getElementById("includeSymbols");
+      const generateButton = document.getElementById("generateButton");
+      const resultElement = document.getElementById("result");
+      const copyTextButton = document.getElementById("copyTextButton");
+
+      function generate() {
+        const length = parseInt(lengthInput.value);
+        const includeUppercase = includeUppercaseInput.checked;
+        const includeLowercase = includeLowercaseInput.checked;
+        const includeNumbers = includeNumbersInput.checked;
+        const includeSymbols = includeSymbolsInput.checked;
+
+        const password = generateRandomPassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols);
+        resultElement.textContent = password;
+      }
+
+      generateButton.addEventListener("click", generate);
+
+      copyTextButton.addEventListener("click", function() {
+        const text = resultElement.textContent;
+        navigator.clipboard.writeText(text).then(() => {
+          const originalText = copyTextButton.textContent;
+          copyTextButton.textContent = "Disalin!";
+          setTimeout(() => {
+            copyTextButton.textContent = originalText;
+          }, 2000);
+        });
+      });
+
+      generate();
+    })
+  </script>
+</body>
+</html>
