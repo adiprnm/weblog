@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Multi-device password management dengan Password Store
-tags:
+tags: Tech
 ---
 
 Beberapa waktu lalu saya mulai menaruh perhatian terhadap aplikasi password manager. Ada beberapa layanan yang bisa digunakan dengan biaya layanan yang miring, bahkan gratis. Tapi, bukan Adi namanya kalau tidak mempersulit diri, haha.
