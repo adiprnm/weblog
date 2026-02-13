@@ -6,7 +6,7 @@ permalink: /alat-tempur
 
 > *terakhir diperbarui tanggal 21 Juni 2025*
 
-**Laptop**
+**LAPTOP**{: class="sans-serif letter-spacing-wide" }
 - Lenovo IdeaPad S350 (2020 - 2025)
   - Prosesor: AMD Ryzen 5 3500U
   - RAM: 8GB (upgradable ke 20GB)
@@ -16,31 +16,31 @@ permalink: /alat-tempur
   - RAM: 16GB
   - SSD: 258GB
 
-**Sistem Operasi**<br>
+**SISTEM OPERASI**{: class="sans-serif" }<br>
 Ubuntu Mate 24.04 LTS
 
-**Blogging**<br>
+**BLOGGING**{: class="sans-serif" }<br>
 Jekyll + Github Pages
 
-**Keyboard**<br>
+**KEYBOARD**{: class="sans-serif" }<br>
 Cooler Master SK622 60% Layout
 
-**Mouse & Mousepad**
+**MOUSE & MOUSEPAD**{: class="sans-serif" }
 - Rexus S5 Aviator Wireless Gaming Mouse
 - Fantech MP64 Basic XL Gaming Mousepad
 
-**True Wireless Stereo**<br>
+**TRUE WIRELESS STEREO**{: class="sans-serif" }<br>
 Monster Airmars XKT08 PRO
 
-**Air Cooler**<br>
+**AIR COOLER**{: class="sans-serif" }<br>
 Goto Madelin Air Cooler Mini
 
-**Multimedia**
+**MULTIMEDIA**{: class="sans-serif" }
 - GIMP
 - Inkscape
 - Canva
 
-**Programming**
+**PROGRAMMING**{: class="sans-serif" }
 - Text editor: NeoVim + Tmux + Tokyonight theme (desktop), Markor (mobile)
 - Terminal: Alacritty
 - Programming Language: Ruby
@@ -48,10 +48,10 @@ Goto Madelin Air Cooler Mini
 - Database: PostgreSQL, SQLite
 - Git client: MGit (mobile)
 
-**Kursi Kerja**<br>
+**KURSI KERJA**{: class="sans-serif" }<br>
 Owen
 
-**Masih masuk wishlist**<br>
+**MASIH MASUK WISHLIST**{: class="sans-serif" }<br>
 - External monitor
 - Microphone
 

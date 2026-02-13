@@ -8,7 +8,7 @@ reply_to_email: none
 {% if site.typography == "sans-serif" %}
   <p style="font-size: 24px; font-weight: 600; margin: 0;">Halo, selamat datang! 👋 </p>
 {% else %}
-  <p style="font-size: 24px; font-weight: 600; margin: 0;" class="sans-serif">Halo, selamat datang! 👋 </p>
+  <p style="font-size: 24px; font-weight: 600; margin: 0; font-family: system-ui, sans-serif;">Halo, selamat datang! 👋 </p>
 {% endif %}
 
 <img class="profile-picture" src="/assets/images/adi-square.webp" alt="Foto Adi Purnama">
@@ -29,7 +29,7 @@ reply_to_email: none
 {% if site.typography == "sans-serif" %}
   <strong style="font-size: 20px">Menemukan tulisan yang mungkin kamu minati</strong>
 {% else %}
-  <strong style="font-size: 20px;" class="sans-serif">Menemukan tulisan yang mungkin kamu minati</strong>
+  <strong style="font-size: 20px; font-family: system-ui, sans-serif;">Menemukan tulisan yang mungkin kamu minati</strong>
 {% endif %}
 
 <ul class="tree">

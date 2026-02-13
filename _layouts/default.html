@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     {% seo %}
     <link rel="icon" href="/assets/images/favicon.svg">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/assets/fonts/Figtree-Italic.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/assets/fonts/Figtree-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+    {% if site.typography == "sans-serif" %}
+      <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% else %}
+      <link rel="stylesheet" href="{{ "/assets/css/main_serif.css" | relative_url }}">
+    {% endif %}
     <link rel="preload" href="/assets/fonts/CascadiaCode-Regular.ttf" as="font" type="font/ttf" crossorigin>
     {% if jekyll.environment == "production" and site.analytics_enabled %}
       <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
@@ -54,7 +54,7 @@
               Chapter {{ page.chapter }}
             </small>
           {% elsif page.date and page.collection != "products" %}
-            <small class="text-gray inline-block mb-2">
+            <small class="post-date text-gray inline-block mb-2">
               {{ page.date | date: "%B %-d, %Y" }}
             </small>
           {% endif %}
@@ -99,23 +99,25 @@
         {% endif %}
       </article>
 
-      <footer class="text-gray mt-8 mb-16 text-center text-sm">
+      <footer class="text-gray mt-8 mb-16 text-center text-xs">
         {% assign latest_status = site.data.statuses | first %}
         {% if latest_status %}
         <div class="status mb-12">
-          <strong>Update Kehidupan</strong>
+          <strong class="title">Update Kehidupan</strong>
           <p class="mt-2"><strong>{{ latest_status.date | date: "%b %-d, %Y" }}</strong>: {{ latest_status.status }}</p>
 
-          <a class="no-text-decoration" href="/status">Lihat status lainnya</a>
+          <a class="no-text-decoration other-status" href="/status">Lihat status lainnya</a>
         </div>
         {% endif %}
         <p>
-          <a href="https://notbyai.fyi" target="_blank">
-            <img src="/assets/images/ditulis-oleh-manusia.svg" class="not-by-ai" alt="Ditulis oleh manusia, buka oleh AI">
-          </a>
-          Subscribe <a href="/newsletter">newsletter</a> atau tangkap <a class="underline--dotted" href="/feed.xml">feed RSS</a>.
-          <br><br>
-          <a href="#" class="underline--dotted">Kembali ke atas</a>
+          <small>
+            <a href="https://notbyai.fyi" target="_blank">
+              <img src="/assets/images/ditulis-oleh-manusia.svg" class="not-by-ai" alt="Ditulis oleh manusia, buka oleh AI">
+            </a>
+            Subscribe <a href="/newsletter">newsletter</a> atau tangkap <a class="underline--dotted" href="/feed.xml">feed RSS</a>.
+            <br><br>
+            <a href="#" class="underline--dotted">Kembali ke atas</a>
+          </small>
         </p>
       </footer>
     </main>
