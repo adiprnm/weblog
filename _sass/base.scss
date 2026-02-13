@@ -18,7 +18,11 @@ body {
   padding: 0;
 }
 
-a { color: $primaryColor; }
+a {
+  color: $primaryColor;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 li a { text-decoration: none; }
 nav a { text-decoration: none; }
 
@@ -75,6 +79,7 @@ table {
 
 article p a {
   text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 img {
@@ -640,12 +645,12 @@ form label {
 }
 
 .tree ul {
-  border-left: 2px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .tree li::before {
   content: "─";
-  border-left: 2px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   color: var(--border-color);
 }
 
