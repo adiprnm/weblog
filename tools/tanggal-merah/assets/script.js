@@ -1,5 +1,6 @@
 async function getNearestPublicHoliday() {
-    let response = await fetch("https://api-harilibur.vercel.app/api")
+    let year = (new Date()).getFullYear()
+    let response = await fetch(`/tools/tanggal-merah/data/${year}.json`)
     let holidays = await response.json()
     holidays = holidays.sort(
         (first, second) => {
