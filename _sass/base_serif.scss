@@ -547,9 +547,10 @@ input[type=submit] {
   font-size: 14px;
 }
 .profile-picture {
-  float: left;
+  float: right;
   margin-top: 1.375rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   width: 120px!important;
 
   @media (min-width: 768px) {
