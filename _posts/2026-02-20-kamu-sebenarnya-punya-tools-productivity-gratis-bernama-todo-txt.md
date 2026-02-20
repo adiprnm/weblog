@@ -31,7 +31,7 @@ x created-at done-at todo-name @konteks +project due:due-date pri:priority
 
 Mari saya jelaskan sedikit:
 
-* `priority/pri`: skala prioritas todo, dimulai dari `(A)` (paling urgent) sampai `(Z) (sangat tidak urgent)`
+* `priority/pri`: skala prioritas todo, dimulai dari `(A)` (paling urgent) sampai `(Z)` (sangat tidak urgent)
 * `created-at`: tanggal todo dibuat
 * `todo-name`: nama todo
 * `@konteks`: situasi, lokasi, alat, atau orang yang harus ada untuk menyelesaikan todo
@@ -41,7 +41,7 @@ Mari saya jelaskan sedikit:
 Sebagai contoh: hari senin saya harus service motor di dealer. Jika diubah ke dalam format `todo.txt`, kurang lebih akan jadi begini:
 
 ```todotxt
-(A) 2026-02-18 service motor @dealer +service due:2026-02-19
+(A) 2026-02-18 service motor @dealer +maintenance due:2026-02-19
 ```
 
 Pada dasarnya, sebenarnya kita cukup ketik "Service motor di dealer" di file `todo.txt`, dan sah-sah saja. Tapi, dengan memakai format di atas, meskipun memang lebih ribet, todo jadi bisa dapat diurutkan atau difilter berdasarkan atribut-atribut tertentu. Atribut-atribut tersebut yaitu prioritas, project, konteks, tanggal dibuat, tenggat waktu, atau deskripsi.
