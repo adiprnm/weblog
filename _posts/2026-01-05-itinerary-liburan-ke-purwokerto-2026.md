@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Itinerary liburan ke Purwokerto edisi 2026
-tags: Libuuran Itinerary
+tags: Liburan Itinerary
 ---
 
 Liburan kali ini bisa dibilang dadakan. Karena lagi libur sekolah, adik ipar ingin liburan ke luar kota. Tapi, harus naik kereta! Ini harga mati, meskipun sudah saya dan istri tawar beberapa kali, haha.

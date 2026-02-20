@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Menambahkan notifikasi low battery di i3wm
-tags: tech
+tags: Tech
 ---
 
 Di customizable window manager seperti i3wm, segala hal yang berkaitan dengan desktop environment harus kita konfigurasikan. Salah satu hal yang perlu diatur konfigurasinya adalah notifikasi low battery.

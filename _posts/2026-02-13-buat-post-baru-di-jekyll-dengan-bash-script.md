@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Buat post baru di Jekyll dengan bash script
-tags: tech
+tags: Tech
 ---
 
 Setiap kali mau buat post baru di Jekyll, yang saya lakukan itu begini:
