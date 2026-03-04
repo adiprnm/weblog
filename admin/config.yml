@@ -2,7 +2,7 @@ backend:
   name: github
   repo: adiprnm/weblog
   branch: main
-  base_url: "https://sveltia-cms-auth.adiprnmreal.workers.dev"
+  base_url: "https://auth.adipurnm.com"
 
 media_folder: "assets/images/2026"
 public_folder: "/assets/images/2026"
