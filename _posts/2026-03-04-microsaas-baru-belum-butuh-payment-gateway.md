@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MicroSaaS baru belum butuh payment gateway
+title: MicroSaaS-mu belum butuh payment gateway
 tags: SideHustle
 date: 2026-03-05T05:05:00
 ---
@@ -22,15 +22,15 @@ Proses pembuatan QRIS lumayan cepat. Saya buat di GoPay Merchant, sehari langsun
 
 Integrasikan proses pembayaran dengan bot Telegram. Bot Telegram itu:
 
-\* gratis
-\* integrasinya mudah, apalagi dibantu AI
-\* menyediakan berbagai jenis inline keyboard sesuai kebutuhan kamu
+- gratis
+- integrasinya mudah, apalagi dibantu AI
+- menyediakan berbagai jenis inline keyboard sesuai kebutuhan kamu
 
 Alurnya: setiap user mengunggah bukti pembayaran, kirim notifikasi bukti pembayaran ke bot Telegram. Notifikasi harus mengandung:
 
-\* informasi pembeli
-\* informasi pesanan
-\* bukti pembayaran yang diunggah pembeli
-\* tombol Setujui/Tolak pesanan
+- informasi pembeli
+- informasi pesanan
+- bukti pembayaran yang diunggah pembeli
+- tombol Setujui/Tolak pesanan
 
 Dengan begini, proses mengatur pesanan jadi lebih mudah. Kamu nggak perlu masuk ke halaman admin hanya untuk menyetujui/menolak pesanan.
