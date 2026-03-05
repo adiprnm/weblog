@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-p, li {
+p, li, .other-status, summary, blockquote, input::placeholder  {
   font-size: 14px;
 }
 
@@ -28,7 +28,7 @@ a {
   text-decoration-style: dotted;
 }
 li a { text-decoration: none; }
-nav a { text-decoration: none; }
+nav a { text-decoration: none; font-size: 13px; }
 
 blockquote {
   color: #999999;
@@ -617,6 +617,21 @@ p:has(.donate-button), a:has(> .donate-button) {
   height: calc(20px * 1.25);
   display: inline-block;
   margin-bottom: 1rem;
+}
+.donate {
+  display: inline-block;
+  font-size: 11px;
+  padding: 4px 12px;
+  font-weight: 600;
+  background-color: $primaryColor;
+  color: white !important;
+  text-decoration: none;
+  border: 2px solid #0a0a0a;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $primaryColorDark;
+    border-color: white;
+  }
 }
 .not-by-ai {
   width: 84px;
