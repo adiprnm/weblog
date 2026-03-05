@@ -34,3 +34,5 @@ Alurnya: setiap user mengunggah bukti pembayaran, kirim notifikasi bukti pembaya
 - tombol Setujui/Tolak pesanan
 
 Dengan begini, proses mengatur pesanan jadi lebih mudah. Kamu nggak perlu masuk ke halaman admin hanya untuk menyetujui/menolak pesanan.
+
+Dan inilah yang saya terapkan di Kanyaah dan di toko online saya sekarang. Sejauh ini cukup happy dengan workflow ini.
