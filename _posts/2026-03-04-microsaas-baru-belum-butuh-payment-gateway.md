@@ -1,7 +1,8 @@
 ---
+layout: default
 title: MicroSaaS baru belum butuh payment gateway
-date: 2026-03-05T05:05:00
 tags: SideHustle
+date: 2026-03-05T05:05:00
 ---
 
 Dear solopreneurs,
