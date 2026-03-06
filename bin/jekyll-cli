@@ -1,0 +1,535 @@
+#!/bin/bash
+
+set -e
+
+SCRIPT_NAME="$(basename "$0")"
+DRAFTS_DIR="_drafts"
+POSTS_DIR="_posts"
+EDITOR="${EDITOR:-nano}"
+
+show_help() {
+    cat << 'EOF'
+Jekyll CLI - Manage your Jekyll blog posts
+
+Usage:
+    jekyll-cli new [TITLE] [--draft|--publish] [--edit]
+    jekyll-cli publish
+    jekyll-cli list [--drafts|--posts]
+    jekyll-cli help
+
+Commands:
+    new          Create a new post
+    publish      Publish a draft post (interactive selection)
+    list         List posts/drafts
+    help         Show this help message
+
+Options:
+    --draft      Create as draft (default)
+    --publish    Create as published post
+    --edit       Open editor immediately after creation
+    --drafts     List only drafts
+    --posts      List only published posts
+
+Examples:
+    jekyll-cli new "My New Post"
+    jekyll-cli new "My Post" --publish --edit
+    jekyll-cli publish
+    jekyll-cli list --drafts
+
+Run without arguments for interactive mode.
+EOF
+}
+
+slugify() {
+    echo "$1" | tr '[:upper:]' '[:lower:]' | sed -e 's/[^a-z0-9]/-/g' -e 's/-\+/-/g' -e 's/^-//' -e 's/-$//'
+}
+
+create_post() {
+    local title="$1"
+    local as_draft="$2"
+    local edit_now="$3"
+    
+    local date_str=$(date +%Y-%m-%d)
+    local slug=$(slugify "$title")
+    local filename="${date_str}-${slug}.md"
+    
+    local filepath
+    local type
+    if [ "$as_draft" = "true" ]; then
+        filepath="$DRAFTS_DIR/$filename"
+        type="draft"
+    else
+        filepath="$POSTS_DIR/$filename"
+        type="published"
+    fi
+    
+    if [ -f "$filepath" ]; then
+        echo "Error: File already exists: $filepath"
+        return 1
+    fi
+    
+    cat > "$filepath" << EOF
+---
+layout: default
+title: $title
+tags: 
+---
+
+EOF
+    
+    echo "✓ Created $type post: $filepath"
+    
+    if [ "$edit_now" = "true" ]; then
+        echo "Opening $EDITOR..."
+        $EDITOR "$filepath"
+    fi
+}
+
+get_post_info() {
+    local file="$1"
+    local basename=$(basename "$file")
+    local date_part=$(echo "$basename" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || echo "no-date")
+    
+    # Extract title, strip quotes using tr (most portable approach)
+    local title=$(grep "^title:" "$file" 2>/dev/null | head -1 | sed 's/title: *//' | tr -d '\"')
+    
+    if [ -z "$title" ]; then
+        title=$(echo "$basename" | sed 's/^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-//;s/\.md$//')
+    fi
+    
+    if [ "$date_part" != "no-date" ]; then
+        echo "[$date_part] $title"
+    else
+        echo "$title"
+    fi
+}
+
+interactive_select() {
+    local dir="$1"
+    local header="$2"
+    
+    if [ ! -d "$dir" ] || [ -z "$(ls -A "$dir"/*.md 2>/dev/null)" ]; then
+        echo ""
+        return 1
+    fi
+    
+    local files=($(ls -1t "$dir"/*.md 2>/dev/null))
+    
+    if [ ${#files[@]} -eq 0 ]; then
+        echo "No files found" >&2
+        return 1
+    fi
+    
+    if [ ${#files[@]} -eq 1 ]; then
+        echo "${files[0]}"
+        return 0
+    fi
+    
+    echo "$header" >&2
+    echo "" >&2
+    
+    local i=1
+    declare -A file_map
+    
+    for file in "${files[@]}"; do
+        local info=$(get_post_info "$file")
+        printf "  %2d) %s\n" "$i" "$info" >&2
+        file_map[$i]="$file"
+        ((i++))
+    done
+    
+    local max=$((i-1))
+    echo "" >&2
+    
+    while true; do
+        local choice
+        read -p "Select (1-$max) or type to search: " choice
+        
+        if [[ "$choice" =~ ^[0-9]+$ ]] && [ "$choice" -ge 1 ] && [ "$choice" -le "$max" ]; then
+            echo "${file_map[$choice]}"
+            return 0
+        fi
+        
+        # Search by text
+        local matches=()
+        for idx in "${!file_map[@]}"; do
+            local file="${file_map[$idx]}"
+            local info=$(get_post_info "$file")
+            if echo "$info" | grep -qi "$choice" 2>/dev/null; then
+                matches+=("$file")
+            fi
+        done
+        
+        if [ ${#matches[@]} -eq 0 ]; then
+            echo "No matches found for '$choice'. Try again." >&2
+        elif [ ${#matches[@]} -eq 1 ]; then
+            echo "${matches[0]}"
+            return 0
+        else
+            echo "" >&2
+            echo "Multiple matches found:" >&2
+            local j=1
+            declare -A match_map
+            for match in "${matches[@]}"; do
+                local info=$(get_post_info "$match")
+                printf "  %2d) %s\n" "$j" "$info" >&2
+                match_map[$j]="$match"
+                ((j++))
+            done
+            
+            local max2=$((j-1))
+            echo "" >&2
+            local subchoice
+            read -p "Select (1-$max2): " subchoice
+            
+            if [[ "$subchoice" =~ ^[0-9]+$ ]] && [ "$subchoice" -ge 1 ] && [ "$subchoice" -le "$max2" ]; then
+                echo "${match_map[$subchoice]}"
+                return 0
+            else
+                echo "Invalid selection" >&2
+                return 1
+            fi
+        fi
+    done
+}
+
+publish_post() {
+    if [ ! -d "$DRAFTS_DIR" ] || [ -z "$(ls -A "$DRAFTS_DIR"/*.md 2>/dev/null)" ]; then
+        echo "No drafts found in $DRAFTS_DIR"
+        return 1
+    fi
+    
+    local selected
+    selected=$(interactive_select "$DRAFTS_DIR" "Select a draft to publish")
+    
+    if [ -z "$selected" ]; then
+        echo "No draft selected"
+        return 1
+    fi
+    
+    local filename=$(basename "$selected")
+    local date_str=$(date +%Y-%m-%d)
+    
+    # Check if filename already starts with a date
+    if echo "$filename" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}-'; then
+        # Filename already has date prefix, use as-is
+        local new_filename="$filename"
+    else
+        # Add date prefix to filename
+        local new_filename="${date_str}-${filename}"
+    fi
+    
+    local target_file="$POSTS_DIR/$new_filename"
+    
+    # Check if file already exists in posts
+    if [ -f "$target_file" ]; then
+        echo "Error: $target_file already exists"
+        return 1
+    fi
+    
+    mv "$selected" "$target_file"
+    
+    local title=$(grep "^title:" "$target_file" 2>/dev/null | head -1 | sed 's/title: *//' | tr -d '\"')
+    echo ""
+    echo "✓ Published: $filename → $new_filename"
+    [ -n "$title" ] && echo "  Title: $title"
+}
+
+push_post() {
+    # Check if we're in a git repository
+    if ! git rev-parse --git-dir > /dev/null 2>&1; then
+        echo "Error: Not a git repository"
+        return 1
+    fi
+    
+    # Show git status first
+    echo ""
+    echo "Current git status:"
+    git status --short
+    echo ""
+    
+    local confirm
+    read -p "Push these changes? (y/n): " confirm
+    
+    if [ "$confirm" != "y" ] && [ "$confirm" != "Y" ]; then
+        echo "Push cancelled"
+        return 0
+    fi
+    
+    echo ""
+    echo "Adding and committing changes..."
+    git add -A
+    git commit -m "Update blog posts"
+    
+    echo ""
+    echo "Pushing to remote..."
+    git push
+    
+    echo ""
+    echo "✓ Pushed successfully"
+}
+
+delete_draft() {
+    if [ ! -d "$DRAFTS_DIR" ] || [ -z "$(ls -A "$DRAFTS_DIR"/*.md 2>/dev/null)" ]; then
+        echo "No drafts found in $DRAFTS_DIR"
+        return 1
+    fi
+    
+    local selected
+    selected=$(interactive_select "$DRAFTS_DIR" "Select a draft to delete")
+    
+    if [ -z "$selected" ]; then
+        echo "No draft selected"
+        return 1
+    fi
+    
+    local filename=$(basename "$selected")
+    local title=$(grep "^title:" "$selected" 2>/dev/null | head -1 | sed 's/title: *//' | tr -d '\"')
+    
+    echo ""
+    local confirm
+    read -p "Are you sure you want to delete '$filename'? (y/n): " confirm
+    
+    if [ "$confirm" = "y" ] || [ "$confirm" = "Y" ]; then
+        rm "$selected"
+        echo ""
+        echo "✓ Deleted: $filename"
+        [ -n "$title" ] && echo "  Title: $title"
+    else
+        echo "Cancelled"
+    fi
+}
+
+list_posts() {
+    local filter="$1"
+    
+    if [ "$filter" = "drafts" ] || [ -z "$filter" ]; then
+        if [ -d "$DRAFTS_DIR" ] && [ -n "$(ls -A "$DRAFTS_DIR"/*.md 2>/dev/null)" ]; then
+            echo ""
+            echo "📝 DRAFTS:"
+            echo "────────────────────────────────────────"
+            local i=1
+            for file in "$DRAFTS_DIR"/*.md; do
+                [ -f "$file" ] || continue
+                local info=$(get_post_info "$file")
+                printf "  %2d) %s\n" "$i" "$info"
+                ((i++))
+            done
+        else
+            echo "No drafts found"
+        fi
+    fi
+    
+    if [ "$filter" = "posts" ] || [ -z "$filter" ]; then
+        if [ -z "$filter" ] && [ -d "$DRAFTS_DIR" ] && [ -n "$(ls -A "$DRAFTS_DIR"/*.md 2>/dev/null)" ]; then
+            echo ""
+        fi
+        
+        if [ -d "$POSTS_DIR" ] && [ -n "$(ls -A "$POSTS_DIR"/*.md 2>/dev/null)" ]; then
+            echo "📄 PUBLISHED POSTS:"
+            echo "────────────────────────────────────────"
+            local files=($(ls -1t "$POSTS_DIR"/*.md 2>/dev/null))
+            local i=1
+            for file in "${files[@]}"; do
+                [ -f "$file" ] || continue
+                local info=$(get_post_info "$file")
+                printf "  %2d) %s\n" "$i" "$info"
+                ((i++))
+            done
+        else
+            echo "No published posts found"
+        fi
+    fi
+    
+    echo ""
+}
+
+interactive_menu() {
+    while true; do
+        clear
+        echo ""
+        echo "      JEKYLL BLOG CLI - MAIN MENU"
+        echo ""
+        echo "  1) Create new draft post"
+        echo "  2) Create new published post"
+        echo "  3) Publish a draft"
+        echo "  4) Delete a draft"
+        echo "  5) Push posts to git"
+        echo "  6) List drafts"
+        echo "  7) List published posts"
+        echo "  8) List all"
+        echo "  9) Help"
+        echo "  0) Exit"
+        echo ""
+        
+        local choice
+        read -p "Enter choice [0-9]: " choice
+        
+        case "$choice" in
+            1)
+                echo ""
+                local title
+                read -p "Post title: " title
+                if [ -n "$title" ]; then
+                    create_post "$title" "true" "false"
+                else
+                    echo "Title cannot be empty"
+                fi
+                ;;
+            2)
+                echo ""
+                local title
+                read -p "Post title: " title
+                if [ -n "$title" ]; then
+                    create_post "$title" "false" "false"
+                else
+                    echo "Title cannot be empty"
+                fi
+                ;;
+            3)
+                echo ""
+                publish_post
+                ;;
+            4)
+                echo ""
+                delete_draft
+                ;;
+            5)
+                echo ""
+                push_post
+                ;;
+            6)
+                list_posts "drafts"
+                ;;
+            7)
+                list_posts "posts"
+                ;;
+            8)
+                list_posts ""
+                ;;
+            9)
+                show_help
+                ;;
+            0)
+                echo ""
+                echo "Goodbye!"
+                exit 0
+                ;;
+            *)
+                echo "Invalid choice"
+                ;;
+        esac
+        
+        echo ""
+        read -p "Press Enter to continue..."
+    done
+}
+
+main() {
+    # No arguments - enter interactive menu
+    if [ $# -eq 0 ]; then
+        interactive_menu
+        exit 0
+    fi
+    
+    local command="$1"
+    shift
+    
+    case "$command" in
+        new|n)
+            local title=""
+            local as_draft="true"
+            local edit_now="false"
+            
+            while [ $# -gt 0 ]; do
+                case "$1" in
+                    --draft)
+                        as_draft="true"
+                        shift
+                        ;;
+                    --publish|--published)
+                        as_draft="false"
+                        shift
+                        ;;
+                    --edit)
+                        edit_now="true"
+                        shift
+                        ;;
+                    --help|-h)
+                        echo "Usage: $SCRIPT_NAME new [TITLE] [--draft|--publish] [--edit]"
+                        exit 0
+                        ;;
+                    -*)
+                        echo "Unknown option: $1"
+                        exit 1
+                        ;;
+                    *)
+                        if [ -z "$title" ]; then
+                            title="$1"
+                        else
+                            title="$title $1"
+                        fi
+                        shift
+                        ;;
+                esac
+            done
+            
+            if [ -z "$title" ]; then
+                read -p "Post title: " title
+                if [ -z "$title" ]; then
+                    echo "Error: Title is required"
+                    exit 1
+                fi
+            fi
+            
+            create_post "$title" "$as_draft" "$edit_now"
+            ;;
+            
+        publish|pub|p)
+            publish_post
+            ;;
+            
+        list|ls|l)
+            local filter=""
+            
+            while [ $# -gt 0 ]; do
+                case "$1" in
+                    --drafts)
+                        filter="drafts"
+                        shift
+                        ;;
+                    --posts)
+                        filter="posts"
+                        shift
+                        ;;
+                    --help|-h)
+                        echo "Usage: $SCRIPT_NAME list [--drafts|--posts]"
+                        exit 0
+                        ;;
+                    -*)
+                        echo "Unknown option: $1"
+                        exit 1
+                        ;;
+                    *)
+                        shift
+                        ;;
+                esac
+            done
+            
+            list_posts "$filter"
+            ;;
+            
+        help|--help|-h)
+            show_help
+            ;;
+            
+        *)
+            echo "Unknown command: $command"
+            echo "Run '$SCRIPT_NAME' without arguments for interactive mode"
+            echo "Or run '$SCRIPT_NAME help' for usage information"
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"
