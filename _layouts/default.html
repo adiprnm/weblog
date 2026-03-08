@@ -85,7 +85,7 @@
             </blockquote>
           {% endif %}
 
-          {% if site.donate_url and page.collection != "products" %}
+          {% if site.donate_url and page.collection != "products" and page.donate != "none" %}
             <hr>
             <p class="text-center">Suka dengan karya/tulisan saya?</p>
             <p class="text-center">
@@ -103,7 +103,7 @@
         {% endif %}
       </article>
 
-      <footer class="text-gray mt-8 mb-16 text-center text-xs">
+      <footer class="text-gray mt-16 mb-16 text-center text-xs">
         {% assign latest_status = site.data.statuses | first %}
         {% if latest_status %}
         <div class="status mb-12">

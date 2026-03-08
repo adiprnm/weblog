@@ -2,23 +2,22 @@
 title: Documenting Life
 layout: default
 reply_to_email: none
+donate: none
 ---
 
 
 {% if site.typography == "sans-serif" %}
   <p style="font-size: 24px; font-weight: 600; margin: 0;">Halo, selamat datang! 👋 </p>
+{% elsif site.typography == "mono" %}
+  <p style="font-size: 24px; font-weight: 600; margin: 0; class="monospace"">Halo, selamat datang! 👋 </p>
 {% else %}
   <p style="font-size: 24px; font-weight: 600; margin: 0;" class="sans-serif">Halo, selamat datang! 👋 </p>
 {% endif %}
 
 <img class="profile-picture" src="/assets/images/adi-square.webp" alt="Foto Adi Purnama">
-<p>Saya Adi. Seorang programmer Ruby on Rails yang hobi menulis dan menikmati hidup slow living di desa bersama istri dan 1 anak.</p>
+<p>Saya Adi. Seorang programmer Ruby on Rails yang hobi menulis dan menikmati hidup slow living di desa. Bekerja secara remote di <a href="https://happy5.co" target="_blank">Happy5</a> sebagai Backend Engineer.</p>
 
-<p>Saat ini, saya bekerja secara remote di <a href="https://happy5.co" target="_blank">Happy5</a> sebagai Backend Engineer.</p>
-
-<p>Saya hobi menulis sejak tahun 2012. Dimulai dari ketertarikan terhadap teknologi. Kemudian, bergelut di dunia <em>web design</em> sebagai <em>script kiddies</em> dan copas konten blog orang lain. Hingga akhirnya menyadari bahwa yang membuat website hidup bukanlah desainnya, tapi tulisan-tulisan otentik di dalamnya.</p>
-
-<p>Sepanjang perjalanan, saya menulis di berbagai platform. Hingga akhirnya memutuskan untuk fokus menulis di website pribadi supaya lebih sederhana dalam banyak aspek.</p>
+<p>Saya hobi menulis sejak tahun 2012. Sepanjang perjalanan, saya menulis di berbagai platform. Hingga akhirnya memutuskan untuk fokus menulis di website pribadi supaya lebih sederhana dan mudah dikustomisasi.</p>
 
 <p>Saya menulis macam-macam, mulai dari tulisan teknis, hingga tulisan nonteknis. <em>As the website name implies: log</em>. Dan sebagaimana log dalam suatu aplikasi: ada <em>access log</em>, <em>error log</em>, atau <em>warning log</em>.</p>
 
@@ -26,44 +25,12 @@ reply_to_email: none
 
 <p>Jangan lupa isi <a href="/buku-tamu">Buku Tamu</a> ya! Biar saya bisa silaturahmi ke blog kamu juga, hehe.</p>
 
-<hr>
-
 {% if site.typography == "sans-serif" %}
-  <strong style="font-size: 20px">Menemukan tulisan yang mungkin kamu minati</strong>
+  <strong class="mt-8 block" style="font-size: 20px">Tulisan terbaru</strong>
+{% elsif site.typography == "mono" %}
+  <strong class="mt-8 block" style="font-size: 20px;" class="monospace">Tulisan terbaru</strong>
 {% else %}
-  <strong style="font-size: 20px;" class="sans-serif">Menemukan tulisan yang mungkin kamu minati</strong>
-{% endif %}
-
-<ul class="tree">
-  <li>👨‍💻 Tech-related?</li>
-  <ul>
-    <li><a href="/teknologia">Teknologia</a></li>
-    <li><a href="/adionrails">Adi on Rails</a></li>
-  </ul>
-  <li>💡 Edukasi?</li>
-  <ul>
-    <li><a href="/melek-digital">Melek Digital</a></li>
-  </ul>
-  <li>📖 E-book?</li>
-  <ul>
-    <li><a href="https://shop.adipurnm.com/products/the-programmers-mindset" target="_blank">The Programmer's Mindset</a></li>
-    <li><a href="https://shop.adipurnm.com/products/self-hosting-dengan-dokku" target="_blank">Self-hosting Dengan Dokku</a></li>
-    <li><a href="https://shop.adipurnm.com/products/rahasia-mulai-bisnis-pembuatan-website-tanpa-skill-desain" target="_blank">Rahasia Mulai Bisnis Pembuatan Website Tanpa Skill Desain</a></li>
-  </ul>
-  <li>❓ Lainnya?</li>
-  <ul>
-    <li><a href="/blog">Arsip Blog</a></li>
-    <li><a href="/newsletter">Newsletter</a></li>
-    <li><a href="/tulisan-menarik">Tulisan Menarik</a></li>
-  </ul>
-</ul>
-
-<hr>
-
-{% if site.typography == "sans-serif" %}
-  <strong style="font-size: 20px">Tulisan terbaru</strong>
-{% else %}
-  <strong style="font-size: 20px;" class="sans-serif">Tulisan terbaru</strong>
+  <strong class="mt-8 block" style="font-size: 20px;" class="sans-serif">Tulisan terbaru</strong>
 {% endif %}
 
 <ul>
@@ -71,3 +38,20 @@ reply_to_email: none
   <li><span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> – <a href="{{ post.url }}">{{ post.title }}</a>{% if forloop.first %}<sup class="new-item"></sup>{% endif %}</li>
   {% endfor %}
 </ul>
+
+{% if site.typography == "sans-serif" %}
+  <strong class="mt-8 block" style="font-size: 20px">Produk terbaru</strong>
+{% elsif site.typography == "mono" %}
+  <strong class="mt-8 block" style="font-size: 20px;" class="monospace">Produk terbaru</strong>
+{% else %}
+  <strong class="mt-8 block" style="font-size: 20px;" class="sans-serif">Produk terbaru</strong>
+{% endif %}
+
+{% assign products = site.data.products | slice: 0, 2 %}
+{% include products.html products=products %}
+
+{% if site.data.products.size > 2 %}
+<p class="text-center">
+  <a href="/produk" class="primary read-more mt-8">Lihat selengkapnya</a>
+</p>
+{% endif %}

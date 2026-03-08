@@ -1,0 +1,28 @@
+- name: "Melek Digital: Bagaimana tetap Aman di Era yang Semakin Tidak Aman"
+  description: Panduan lengkap mengenali dan menghindari berbagai modus penipuan digital berdasarkan kasus nyata.
+  price: Rp0
+  sale_price: null
+  minimum_price: Rp0
+  url: "https://shop.adipurnm.com/products/melek-digital"
+  image_url: /assets/images/products/melek-digital.webp
+- name: "Rahasia Mulai Bisnis Pembuatan Website Tanpa Skill Desain"
+  description: Mulai bisnis jasa website tanpa skill desain. Belajar WordPress dalam 7 hari, bangun portofolio dalam 2 hari, dapatkan klien dalam 2 minggu. Tanpa coding, modal minim.
+  price: Rp54.900
+  sale_price: Rp34.900
+  minimum_price: null
+  url: "https://shop.adipurnm.com/products/rahasia-mulai-bisnis-pembuatan-website-tanpa-skill-desain"
+  image_url: /assets/images/products/rahasia-mulai-bisnis-pembuatan-website-tanpa-skill-desain.webp
+- name: "The Programmer's Mindset: Rahasia yang Tidak Diajarkan di Bootcamp"
+  description: Bentuk mindset programmer sejati dengan panduan fundamental solid, jam terbang, optimasi, deployment, dan debugging. Ditulis praktisi dan diupdate berkala.
+  price: Rp54.900
+  sale_price: Rp34.900
+  minimum_price:  null
+  url: "https://shop.adipurnm.com/products/the-programmers-mindset"
+  image_url: /assets/images/products/the-programmers-mindset.webp
+- name: "Self-hosting dengan Dokku"
+  description: Langkah praktis untuk deploy aplikasi dengan mudah di VPS kamu.
+  price: Gratis
+  sale_price: null
+  minimum_price:  null
+  url: "https://shop.adipurnm.com/products/self-hosting-dengan-dokku"
+  image_url: /assets/images/products/self-hosting-dengan-dokku.webp

@@ -1,0 +1,20 @@
+<div class="product-layout mt-4">
+  {% for product in include.products %}
+    <a href="{{ product.url}}" target="_blank">
+      <article class="product-card">
+        <img src="{{ product.image_url }}" alt="{{ product.name }}" class="product-image">
+        <div class="p-4">
+          {% if product.minimum_price %}
+            <p class="product-price">Mulai dari <strong>{{ product.minimum_price }}</strong></p>
+          {% elsif product.sale_price %}
+            <p class="product-price"><del datetime="2026-03-08T12:54:58 +0700">{{ product.price }}</del> <strong>{{ product.sale_price}}</strong></p>
+          {% else %}
+            <p class="product-price"><strong>{{ product.price }}</strong></p>
+          {% endif %}
+          <p class="product-title"><strong>{{ product.name }}</strong></p>
+          <p class="product-description">{{ product.description }}</p>
+        </div>
+      </article>
+    </a>
+  {% endfor %}
+</div>

@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-p, li, .other-status, summary, blockquote, input::placeholder  {
+p, li, .title, .other-status, summary, blockquote, input::placeholder  {
   font-size: 14px;
 }
 
@@ -28,7 +28,14 @@ a {
   text-decoration-style: dotted;
 }
 li a { text-decoration: none; }
-nav a { text-decoration: none; font-size: 13px; }
+nav a {
+  text-decoration: none;
+  font-size: 13px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+}
 
 blockquote {
   color: #999999;
@@ -47,7 +54,7 @@ p code, li code {
   font-size: 14px;
 }
 
-p, li { line-height: 1.5em; }
+p, li { line-height: 1.75em; }
 button:hover, summary:hover { cursor: pointer; }
 
 article hr {
@@ -111,7 +118,7 @@ p img + em {
 code { font-family: "Cascadia Code"; }
 
 .container {
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
 }
 .my-8 {
@@ -142,6 +149,7 @@ code { font-family: "Cascadia Code"; }
 .pr-2 { padding-right: 0.5rem; }
 .pl-2 { padding-left: 0.5rem; }
 .px-4 { padding-left: 1rem; padding-right: 1rem; }
+.p-4 { padding: 1rem; }
 .inline-block { display: inline-block; }
 .inline { display: inline; }
 .block { display: block; }
@@ -461,16 +469,18 @@ input[type=submit] {
 
 .status {
   padding: 1rem;
-  border: 1px solid #7A7E8A;
+  border: 2px solid #0a0a0a;
   background-color: #fcfcfc;
   color: #444444;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 0 #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
   .status {
     background-color: #121420;
-    color: #B0B3BA;
+    color: #E4E6EB;
+    border-color: #E4E6EB;
+    box-shadow: 3px 3px 0 #E4E6EB;
   }
 }
 
@@ -539,9 +549,16 @@ input[type=submit] {
   margin-left: 1rem;
   margin-bottom: 1rem;
   width: 120px!important;
+  border: 2px solid #0a0a0a;
+  box-shadow: 3px 3px 0 #0a0a0a;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #E4E6EB;
+    box-shadow: 3px 3px 0 #E4E6EB;
+  }
 
   @media (min-width: 768px) {
-    width: 130px!important;
+    width: 150px!important;
   }
 }
 details summary {
@@ -618,7 +635,7 @@ p:has(.donate-button), a:has(> .donate-button) {
   display: inline-block;
   margin-bottom: 1rem;
 }
-.donate {
+.donate, .primary {
   display: inline-block;
   font-size: 11px;
   padding: 4px 12px;
@@ -627,11 +644,16 @@ p:has(.donate-button), a:has(> .donate-button) {
   color: white !important;
   text-decoration: none;
   border: 2px solid #0a0a0a;
+  box-shadow: 3px 3px 0 #0a0a0a;
 
   @media (prefers-color-scheme: dark) {
     background-color: $primaryColorDark;
     border-color: white;
+    box-shadow: 3px 3px 0 white;
   }
+}
+.read-more {
+  font-size: 13px !important;
 }
 .not-by-ai {
   width: 84px;
@@ -691,4 +713,62 @@ form label {
 }
 .letter-spacing-wide {
   letter-spacing: 1px;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+a:has(.product-card) {
+  color: inherit;
+  text-decoration: none;
+
+  @media (prefers-color-scheme: dark) {
+    color: #E4E6EB !important;
+  }
+}
+
+.product-card {
+  border: 2px solid #0a0a0a;
+  box-shadow: 3px 3px 0 #0a0a0a;
+  height: 100%;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #E4E6EB;
+    box-shadow: 3px 3px 0 #E4E6EB;
+  }
+
+  .product-image {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    max-height: 500px;
+    border-bottom: 2px solid #0a0a0a;
+
+    @media (prefers-color-scheme: dark) {
+      border-bottom-color: #E4E6EB;
+    }
+  }
+  .product-price {
+    margin-top: 0;
+    background-color: $primaryColor;
+    color: white;
+    border: 2px solid #0a0a0a;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 1.5rem;
+    font-size: 13px;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $primaryColorDark;
+      border-color: #E4E6EB;
+    }
+  }
+  .product-title { margin-top: 0; }
+  .product-description { margin-bottom: 0; }
 }
