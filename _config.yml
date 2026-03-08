@@ -1,7 +1,8 @@
 url: "https://adipurnm.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-analytics_url: https://stats.adipurnm.my.id/script.js
+analytics_url: https://stats.adipurnm.com/script.js
 analytics_enabled: true
+website_id: ecc10bf1-db29-428a-8403-c63c348f88cc
 donate_url: "https://shop.adipurnm.com/supports"
 title: "adipurnm's log" # the name of your site, e.g. ACME Corp.
 email: "adi@adipurnm.com"

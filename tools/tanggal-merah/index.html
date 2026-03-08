@@ -15,7 +15,7 @@ description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/script.js"></script>
   {% if jekyll.environment == "production" and site.analytics_enabled %}
-    <script src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" async></script>
+    <script defer async src="{{ site.analytics_url }}" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}" data-page="{{ page.title }}" data-website-id="{{ site.website_id }}"></script>
   {% endif %}
 </head>
 <body>
