@@ -5,17 +5,17 @@ permalink: /project
 description: List project personal dan komersial. Selain bikin aplikasi, saya juga nulis e-book.
 ---
 
-### Aplikasi
+<h2 class="mt-8">Aplikasi</h2>
 
 **Aktif**{: class="sans-serif" }
 * [AdiOnRails](https://adionrails.com){: .underline--dotted target="_blank" }: Belajar Ruby dan Rails dalam bahasa Indonesia
 * [adipurnm's shop](https://shop.adipurnm.com){: .underline--dotted :target="_blank" }: Jual e-book, source code, dan produk digital lainnya
 * [Bikin Aja Dulu](https://bikinajadulu.web.id){: .underline--dotted :target="_blank" }: Jual e-book, source code, dan produk digital lainnya
 * [Kanyaah](https://kanyaah.com){: .underline--dotted :target="_blank" }: Undangan pernikahan digital
+* [Wang](https://wang.bikinajadulu.web.id){: .underline--dotted target="_blank" }: Aplikasi financial tracker untuk keluarga.
 
 **Nonaktif**{: class="sans-serif" }
 * [ToWebP](https://towebp.adipurnm.my.id){: .underline--dotted target="_blank" }: Convert gambar apapun jadi WebP.
-* [Wang](https://wang.bikinajadulu.web.id){: .underline--dotted target="_blank" }: Aplikasi financial tracker favoritmu.
 * [Mau Kemana Kita](https://maukemanakita.com){: .underline--dotted target="_blank" }: Homestay & Rental
 * [Let's Blogging](https://letsblogging.xyz){: .underline--dotted target="_blank" }: Let's make blogging fun again
 * [Cirian](https://cirian.my.id){: .underline--dotted target="_blank" }: bagikan tautan menarik di profilmu
@@ -26,16 +26,20 @@ description: List project personal dan komersial. Selain bikin aplikasi, saya ju
 * [SimpleStats](https://github.com/adiprnm/simplestats){: .underline--dotted target="_blank" }: No-nonsense, self-hostable website analytic platform.
 * [Gawéeun](https://github.com/adiprnm/gaweeun){: .underline--dotted target="_blank" }: To-do apps. Focused.
 
-### Boring Tools
+<h2 class="mt-8">Boring Tools</h2>
 
 Semua boring tools yang sudah saya buat dipindahkan [ke halaman ini](/tools).
 
-### Plugin
+<h2 class="mt-8">Plugins & Mini Apps</h2>
 
 * [neotodotxt.nvim](https://github.com/adiprnm/neotodotxt.nvim){: .underline--dotted target="_blank" }: todo.txt in your NeoVim
+* [betters3tui](https://github.com/adiprnm/betters3tui){: .underline--dotted target="_blank" }: aplikasi berbasis TUI untuk mengakses layanan penyimpanan S3-compatible, ditulis dalam bahasa Ruby.
+* [id-calendar-tui](https://github.com/adiprnm/id-calendar-tui){: .underline--dotted target="_blank" }: aplikasi berbasis TUI untuk menampilkan kalender dan hari libur Indonesia, ditulis dalam bahasa Ruby.
 
-### Ebook
+<h2 class="mt-8">Produk Digital</h2>
 
-* [Rahasia Mulai Bisnis Pembuatan Website Tanpa Skill Desain](https://shop.adipurnm.com/products/rahasia-mulai-bisnis-pembuatan-website-tanpa-skill-desain){: class="underline--dotted" target="_blank" }: tips praktis untuk memulai jasa pembuatan website.
-* [The Programmer's Mindset](https://shop.adipurnm.com/products/the-programmers-mindset){: .underline--dotted target="_blank" }: mindset-mindset yang diperlukan untuk menjadi seorang programmer.
-* [Self-hosting dengan Dokku](https://shop.adipurnm.com/ebooks/self-hosting-dengan-dokku){: .underline--dotted target="_blank" }: deploy aplikasi kamu ke VPS dengan mudah. Bye, vendor lock-in!
+<ul>
+    {% for product in site.data.products %}
+    <li><a href="{{ product.url}}">{{ product.name }}</a></li>
+    {% endfor %}
+</ul>
